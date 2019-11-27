@@ -88,4 +88,17 @@ footer {
   padding-top: 10px;
 }
 
+/* =================================
+Character Selection Page
+==================================== */
+.charBox {
+  border: solid 5px black;
+  padding: 5vh;
+  margin: 2vh;
+}
+
+.avatars {
+  max-width: 20vh;
+}
+
 /*# sourceMappingURL=styles.css.map */
