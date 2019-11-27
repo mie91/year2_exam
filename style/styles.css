@@ -27,18 +27,42 @@ nav {
   margin-bottom: 20px;
 }
 
-.navlink, .navlinkactive {
+.navlink,
+.navlinkactive {
   font-family: "Rock Salt", cursive;
-  letter-spacing: 3px;
+  font-size: 1.5em;
+  letter-spacing: 0.2em;
   margin: 10px;
   text-decoration: none;
   background-color: #a06e82;
   padding: 10px;
+  border: solid 2px white;
+  border-radius: 50px;
+  color: #cee8ea;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+  transition: all 0.4s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.navlinkactive {
+  background-color: #497f89;
+}
+
+.navlink:hover {
+  box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+.navlinkactive:hover {
+  box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.3);
+  color: #fff;
 }
 
 .logoimage img {
-  max-width: 25vh;
-  margin-bottom: 10px;
+  max-width: 20%;
+  margin-bottom: 5%;
+  margin-top: 1%;
 }
 
 /* =================================
@@ -52,16 +76,11 @@ nav {
   }
 
   .logoimage img {
-    max-width: 20vh;
+    max-width: 50%;
   }
 
   .navlink, .navlinkactive {
     display: inline-flex;
-  }
-}
-@media only screen and (max-width: 425px) {
-  .logoimage img {
-    max-width: 10vh;
   }
 }
 /* =================================

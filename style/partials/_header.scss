@@ -14,30 +14,44 @@ nav {
   margin-bottom: 20px;
 }
 
-.navlink, .navlinkactive {
- font-family: $headerFont;
- letter-spacing: 3px;
- margin: 10px;
- text-decoration: none;
- background-color: $teal;
- padding: 5px;
+.navlink,
+.navlinkactive {
+  font-family: $headerFont;
+  font-size: 1.5em;
+  letter-spacing: 0.2em;
+  margin: 10px;
+  text-decoration: none;
+  background-color: $pink;
+  padding: 10px;
+  border: $whiteBorder;
+  border-radius: 50px;
+  color: $brightteal;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+  transition: all 0.4s ease 0s;
+  cursor: pointer;
+  outline: none;
+
 }
 
 .navlinkactive {
+  background-color: $teal;
 
 }
 
 .navlink:hover {
-
+  box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.3);
+  color: #fff;
 }
 
 .navlinkactive:hover {
-
+  box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.3);
+  color: #fff;
 }
 
 .logoimage img {
-  max-width: 25vh;
-
+  max-width: 20%;
+  margin-bottom: 5%;
+  margin-top: 1%;
 }
 /* =================================
   Media Queries
@@ -57,7 +71,7 @@ nav {
   }
 
 .logoimage img {
-  max-width: 20vh;
+  max-width: 50%;
 }
 
 .navlink, .navlinkactive {
@@ -68,7 +82,7 @@ nav {
 }
 @media only screen and (max-width: 425px) {
   .logoimage img {
-    max-width: 10vh;
+
   }
 }
 @media only screen and (max-width: 375px) {
