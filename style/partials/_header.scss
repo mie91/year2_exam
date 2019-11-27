@@ -31,7 +31,7 @@ nav {
 }
 
 .logoimage img {
-  max-width: 250px;
+  max-width: 25vh
 }
 /* =================================
   Media Queries
@@ -51,7 +51,7 @@ nav {
   }
 
 .logoimage img {
-  max-width: 200px;
+  max-width: 20vh;
 }
 
 .navlink, .navlinkactive {
@@ -62,7 +62,7 @@ nav {
 }
 @media only screen and (max-width: 425px) {
   .logoimage img {
-    max-width: 150px;
+    max-width: 10vh;
   }
 }
 @media only screen and (max-width: 375px) {

@@ -8,6 +8,8 @@ Body, Global
 .container {
   display: flex;
   margin: 0px 0px;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .content-wrap {
@@ -17,7 +19,13 @@ Body, Global
 }
 
 .charBox {
-  border: solid 10px red;
+  border: solid 5px black;
+	padding: 5vh;
+	margin: 2vh;
+}
+
+.avatars {
+	max-width: 20vh;
 }
 
 /* =================================

@@ -14,7 +14,7 @@ nav {
 }
 
 .logoimage img {
-  max-width: 250px;
+  max-width: 25vh;
 }
 
 /* =================================
@@ -28,7 +28,7 @@ nav {
   }
 
   .logoimage img {
-    max-width: 200px;
+    max-width: 20vh;
   }
 
   .navlink, .navlinkactive {
@@ -37,7 +37,7 @@ nav {
 }
 @media only screen and (max-width: 425px) {
   .logoimage img {
-    max-width: 150px;
+    max-width: 10vh;
   }
 }
 /* =================================
@@ -50,37 +50,31 @@ Body, Global
 .container {
   display: flex;
   margin: 0px 0px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .content-wrap {
-  max-width: 1100px;
   margin: 0 auto;
   padding-top: 0;
 }
 
+.charBox {
+  border: solid 5px black;
+  padding: 5vh;
+  margin: 2vh;
+}
 
+.avatars {
+  max-width: 20vh;
+}
 
 /* =================================
   Media Queries
 ==================================== */
 @media only screen and (max-width: 900px) {
   .container {
-    flex-direction: column;
-  }
-}
-@media only screen and (max-width: 769px) {
-  nav {
-    text-align: center;
-    margin: auto;
-    width: 100%;
-  }
-
-  .logo {
-    max-width: 200px;
-  }
-
-  .navlink, .navlinkactive {
-    display: inline-flex;
+    flex-direction: row;
   }
 }
 footer {
