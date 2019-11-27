@@ -8,7 +8,7 @@ Body, Global
 .container {
   display: flex;
   margin: 0px 0px;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -17,6 +17,9 @@ Body, Global
   padding-top: 0;
 }
 
+/* =================================
+Character Selection Page
+==================================== */
 .charBox {
   border: solid 5px black;
   padding: 5vh;
