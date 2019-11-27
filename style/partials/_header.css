@@ -1,7 +1,6 @@
 /* =================================
 Navigation Bar
 ==================================== */
-
 header {
   width: 100%;
   padding: 0px;
@@ -14,35 +13,13 @@ nav {
   margin-bottom: 20px;
 }
 
-.navlink, .navlinkactive {
-
-}
-
-.navlinkactive {
-
-}
-
-.navlink:hover {
-
-}
-
-.navlinkactive:hover {
-
-}
-
 .logoimage img {
   max-width: 250px;
 }
+
 /* =================================
   Media Queries
 ==================================== */
-
-
-
-@media only screen and (max-width: 900px) {
-}
-
-
 @media only screen and (max-width: 769px) {
   nav {
     text-align: center;
@@ -50,20 +27,18 @@ nav {
     width: 100%;
   }
 
-.logoimage img {
-  max-width: 200px;
-}
+  .logoimage img {
+    max-width: 200px;
+  }
 
-.navlink, .navlinkactive {
-  display: inline-flex;
-
-}
-
+  .navlink, .navlinkactive {
+    display: inline-flex;
+  }
 }
 @media only screen and (max-width: 425px) {
   .logoimage img {
     max-width: 150px;
   }
 }
-@media only screen and (max-width: 375px) {
-}
+
+/*# sourceMappingURL=_header.css.map */
