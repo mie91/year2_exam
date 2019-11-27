@@ -16,6 +16,11 @@ nav {
 
 .navlink, .navlinkactive {
  font-family: $headerFont;
+ letter-spacing: 3px;
+ margin: 10px;
+ text-decoration: none;
+ background-color: $teal;
+ padding: 5px;
 }
 
 .navlinkactive {
@@ -31,7 +36,8 @@ nav {
 }
 
 .logoimage img {
-  max-width: 25vh
+  max-width: 25vh;
+
 }
 /* =================================
   Media Queries

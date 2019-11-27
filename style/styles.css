@@ -29,10 +29,16 @@ nav {
 
 .navlink, .navlinkactive {
   font-family: "Rock Salt", cursive;
+  letter-spacing: 3px;
+  margin: 10px;
+  text-decoration: none;
+  background-color: #a06e82;
+  padding: 10px;
 }
 
 .logoimage img {
   max-width: 25vh;
+  margin-bottom: 10px;
 }
 
 /* =================================
