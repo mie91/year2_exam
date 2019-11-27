@@ -3,9 +3,10 @@
 // sass --watch styles.scss:styles.css //
 
 
-@import "./partials/header";
-@import "./partials/body";
-@import "./partials/footer";
+//font-family: 'Rock Salt', cursive;
+//font-family: 'Antic Slab', serif;
+
+@import url('https://fonts.googleapis.com/css?family=Antic+Slab|Rock+Salt&display=swap');
 
 @import "./partials/blocktags";
 @import "./partials/mixins";
@@ -14,3 +15,7 @@
 @import "./partials/characterselect";
 @import "./partials/thegame";
 @import "./partials/victorypage";
+
+@import "./partials/header";
+@import "./partials/body";
+@import "./partials/footer";

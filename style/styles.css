@@ -1,3 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Antic+Slab|Rock+Salt&display=swap");
+/* =================================
+Character Selection Page
+==================================== */
+.charBox {
+  border: solid 5px black;
+  padding: 5vh;
+  margin: 2vh;
+}
+
+.avatars {
+  max-width: 20vh;
+}
+
 /* =================================
 Navigation Bar
 ==================================== */
@@ -11,6 +25,10 @@ header {
 nav {
   margin: auto;
   margin-bottom: 20px;
+}
+
+.navlink, .navlinkactive {
+  font-family: "Rock Salt", cursive;
 }
 
 .logoimage img {
@@ -59,6 +77,10 @@ Body, Global
   padding-top: 0;
 }
 
+body {
+  background-color: #1e1b1f;
+}
+
 /* =================================
   Media Queries
 ==================================== */
@@ -73,19 +95,6 @@ footer {
   padding-bottom: 20px;
   width: 100%;
   padding-top: 10px;
-}
-
-/* =================================
-Character Selection Page
-==================================== */
-.charBox {
-  border: solid 5px black;
-  padding: 5vh;
-  margin: 2vh;
-}
-
-.avatars {
-  max-width: 20vh;
 }
 
 /*# sourceMappingURL=styles.css.map */
