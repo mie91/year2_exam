@@ -15,6 +15,10 @@ Body, Global
   padding-top: 0;
 }
 
+.charBox {
+  border: solid 10px red;
+}
+
 /* =================================
   Media Queries
 ==================================== */
