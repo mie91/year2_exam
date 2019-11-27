@@ -6,10 +6,9 @@ async function fetchCharacters(id) {
     const data = await response.json();
     return data;
 }
-
+let charJon;
 let charArya;
 let charSansa;
-let charJon;
 let charCersei;
 let charJaime;
 let charTyrion;
@@ -17,6 +16,11 @@ let charDany;
 let charViserys;
 let charOberyn;
 let charEllaria;
+
+fetchCharacters(583).then(function(data) {
+    charJon = data;
+    console.log(charJon);
+});
 
 fetchCharacters(148).then(function(data) {
     characterArya = data;
@@ -28,10 +32,6 @@ fetchCharacters(957).then(function(data) {
     console.log(charSansa);
 });
 
-fetchCharacters(583).then(function(data) {
-    charJon = data;
-    console.log(charJon);
-});
 
 fetchCharacters(238).then(function(data) {
     charCersei = data;
