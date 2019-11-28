@@ -1,3 +1,15 @@
+/* cd C:\Users\Marie Helen Berger\github\year2_exam\style
+
+ sass --watch styles.scss:styles.css /*
+
+
+
+
+
+
+
+
+
 <div class="content-wrap">
   <div class="container">
     <div class="charBox">
