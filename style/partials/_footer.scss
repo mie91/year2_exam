@@ -3,5 +3,14 @@ footer {
   padding: 0px;
   padding-bottom: 20px;
   width: 100%;
-  padding-top: 10px;
+  padding-top: 200px;
+}
+
+.creator {
+  font-family: $textFont;
+  color: rgba($pink, 0.2);
+}
+
+.creator:hover {
+  color: rgba($pink, 1);
 }

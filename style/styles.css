@@ -11,7 +11,7 @@ Character Selection Avatars
   margin: 2vh;
   background: linear-gradient(60deg, #875368 0%, #d1adbc 50%, #875368 100%);
   background-position: -180px -180px, 0 0;
-  background-image: -webkit-linear-gradient(top left, rgba(191, 105, 145, 0.8) 39%, rgba(255, 255, 255, 0.9) 45%, rgba(191, 105, 145, 0.8) 50%);
+  background-image: -webkit-linear-gradient(top left, rgba(193, 103, 151, 0.8) 39%, rgba(255, 255, 255, 0.9) 45%, rgba(193, 103, 151, 0.8) 50%);
   background-size: 250% 250%, 100% 100%;
 }
 
@@ -82,8 +82,8 @@ nav {
   text-align: center;
   transition: all 0.7s ease 0s;
   border: solid 2px white;
-  background-color: #bf6991;
-  color: #f0e6f4;
+  background-color: #c16797;
+  color: #FFE6F3;
   font-size: 1.3em;
 }
 
@@ -160,7 +160,16 @@ footer {
   padding: 0px;
   padding-bottom: 20px;
   width: 100%;
-  padding-top: 10px;
+  padding-top: 200px;
+}
+
+.creator {
+  font-family: "Antic Slab", serif;
+  color: rgba(193, 103, 151, 0.2);
+}
+
+.creator:hover {
+  color: #c16797;
 }
 
 /*# sourceMappingURL=styles.css.map */
