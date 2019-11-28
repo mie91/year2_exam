@@ -1,0 +1,39 @@
+
+/* =================================
+Buttons
+==================================== */
+
+@mixin basebutton {
+  font-family: $headerFont;
+  letter-spacing: 0.2em;
+  margin: 10px;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 50px;
+  text-align: center;
+  transition: all 0.4s ease 0s;
+}
+
+@mixin white-pink-btn {
+   border: $whiteBorder;
+   background-color: $pink;
+   color: $brightpink;
+}
+
+@mixin white-teal-btn {
+   border: $whiteBorder;
+   background-color: $teal;
+   color: $brightteal;
+}
+
+@mixin hover-white {
+  color: $white;
+  box-shadow: 0 0 30px $white;
+  text-shadow: 0 0 30px $white;
+}
+
+@mixin hover-white-before {
+  transform: scale(1.5);
+  box-shadow: 0 0 15px $white;
+  filter: blur(5px);
+}

@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Antic+Slab|Rock+Salt&display=swap");
 /* =================================
+Buttons
+==================================== */
+/* =================================
 Character Selection Page
 ==================================== */
 .charBox {
@@ -27,36 +30,31 @@ nav {
   margin-bottom: 20px;
 }
 
-.navlink,
-.navlinkactive {
+.navlink {
   font-family: "Rock Salt", cursive;
-  font-size: 1.5em;
   letter-spacing: 0.2em;
   margin: 10px;
   text-decoration: none;
-  background-color: #a06e82;
   padding: 10px;
-  border: solid 2px white;
   border-radius: 50px;
-  color: #cee8ea;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+  text-align: center;
   transition: all 0.4s ease 0s;
-  cursor: pointer;
-  outline: none;
+  border: solid 2px white;
+  background-color: #875368;
+  color: #e3ceea;
+  font-size: 1.3em;
 }
 
-.navlinkactive {
-  background-color: #497f89;
+.navlink:hover:before {
+  transform: scale(1.5);
+  box-shadow: 0 0 15px #ffffff;
+  filter: blur(5px);
 }
 
 .navlink:hover {
-  box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.3);
-  color: #fff;
-}
-
-.navlinkactive:hover {
-  box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.3);
-  color: #fff;
+  color: #ffffff;
+  box-shadow: 0 0 30px #ffffff;
+  text-shadow: 0 0 30px #ffffff;
 }
 
 .logoimage img {
@@ -98,12 +96,13 @@ Body, Global
 }
 
 .content-wrap {
+  max-width: 1800px;
   margin: 0 auto;
   padding-top: 0;
 }
 
 body {
-  background-color: #1e1b1f;
+  background: linear-gradient(180deg, #1e1b1f 0%, black 100%);
 }
 
 /* =================================

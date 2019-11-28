@@ -14,38 +14,18 @@ nav {
   margin-bottom: 20px;
 }
 
-.navlink,
-.navlinkactive {
-  font-family: $headerFont;
-  font-size: 1.5em;
-  letter-spacing: 0.2em;
-  margin: 10px;
-  text-decoration: none;
-  background-color: $pink;
-  padding: 10px;
-  border: $whiteBorder;
-  border-radius: 50px;
-  color: $brightteal;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
-  transition: all 0.4s ease 0s;
-  cursor: pointer;
-  outline: none;
-
+.navlink {
+  @include basebutton;
+  @include white-pink-btn;
+  font-size: 1.3em;
 }
 
-.navlinkactive {
-  background-color: $teal;
-
+.navlink:hover:before {
+@include hover-white-before;
 }
 
 .navlink:hover {
-  box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.3);
-  color: #fff;
-}
-
-.navlinkactive:hover {
-  box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.3);
-  color: #fff;
+  @include hover-white;
 }
 
 .logoimage img {
