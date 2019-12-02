@@ -52,15 +52,15 @@ Other
 ==================================== */
 .header {
   text-align: center;
-  font-family: "Rock Salt", cursive;
+  font-family: "Antic Slab", serif;
   letter-spacing: 5px;
   color: #eefeff;
   font-size: 1.1em;
 }
 
-.theChosen {
+.selection-container {
   text-align: center;
-  font-family: "Antic Slab", serif;
+  font-family: "Rock Salt", cursive;
   letter-spacing: 8px;
   color: #eefeff;
   font-size: 2em;
@@ -81,8 +81,6 @@ Other
   background-color: #1e1b1f;
   color: #ffffff;
   font-size: 1.3em;
-  display: block;
-  margin: 0 auto;
 }
 
 /* =================================

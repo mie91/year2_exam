@@ -42,15 +42,15 @@ Other
 
 .header {
   text-align: center;
-  font-family: $headerFont;
+  font-family: $textFont;
   letter-spacing: 5px;
   color: $brightteal;
   font-size: 1.1em;
 }
 
-.theChosen {
+.selection-container {
   text-align: center;
-  font-family: $textFont;
+  font-family: $headerFont;
   letter-spacing: 8px;
   color: $brightteal;
   font-size: 2em;
