@@ -60,6 +60,26 @@ Other
 
 .startGame {
   @include basebutton;
-  @include white-gray-btn;
+  @include white-teal-btn;
   font-size: 1.3em;
+}
+
+.navlink:hover:before {
+  @include hover-white-before;
+}
+
+.startGame:hover {
+  @include hover-white;
+}
+
+button:disabled{
+  border: 2px solid $white;
+  background-color: #cccccc;
+  color: $darkgray;
+}
+
+button:disabled:hover{
+  box-shadow: none;
+  color: $darkgray;
+  cursor: not-allowed;
 }

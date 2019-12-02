@@ -78,9 +78,33 @@ Other
   text-align: center;
   transition: all 0.7s ease 0s;
   border: solid 2px white;
-  background-color: #1e1b1f;
-  color: #ffffff;
+  background-color: #49a3b1;
+  color: #eefeff;
   font-size: 1.3em;
+}
+
+.navlink:hover:before {
+  transform: scale(1.5);
+  box-shadow: 0 0 15px #ffffff;
+  filter: blur(5px);
+}
+
+.startGame:hover {
+  color: #ffffff;
+  box-shadow: 0 0 30px #ffffff;
+  text-shadow: 0 0 30px #ffffff;
+}
+
+button:disabled {
+  border: 2px solid #ffffff;
+  background-color: #cccccc;
+  color: #1e1b1f;
+}
+
+button:disabled:hover {
+  box-shadow: none;
+  color: #1e1b1f;
+  cursor: not-allowed;
 }
 
 /* =================================
@@ -145,7 +169,7 @@ nav {
 }
 
 .modalBox {
-  text-align: right;
+  text-align: center;
 }
 
 .modal-content {
