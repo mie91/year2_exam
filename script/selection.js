@@ -1,28 +1,24 @@
  /*jshint esversion: 8 */
 let player = null;
 let startGame = document.getElementById("startGame");
-
 let allPlayers = document.querySelectorAll(".charBox");
 
-allPlayers.forEach(function(playerCard) {
-
-  playerCard.addEventListener("click", function() {
+allPlayers.forEach(function(characterBox) {
+  characterBox.addEventListener("click", function() {
 
     let characterName = this.dataset.name;
-
     let selectedPlayerDisplay = document.getElementById("selectedPlayer");
 
     if (this.classList.contains("theChosen")) {
       this.classList.remove("theChosen");
       player = null;
     } else {
-      allPlayers.forEach(function(playerCard) {
-        playerCard.classList.remove("theChosen");
+      allPlayers.forEach(function(characterBox) {
+        characterBox.classList.remove("theChosen");
       });
       this.classList.add("theChosen");
       player = characterName;
     }
-
 
     if (player === null) {
       selectedPlayerDisplay.innerHTML = "None selected";
@@ -33,6 +29,7 @@ allPlayers.forEach(function(playerCard) {
       localStorage.setItem("player", characterName);
       startGame.disabled = false;
     }
+    console.log(player);
   });
 
 });

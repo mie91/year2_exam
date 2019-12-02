@@ -1,6 +1,5 @@
-/* cd C:\Users\Marie Helen Berger\github\year2_exam\style
-
- sass --watch styles.scss:styles.css /*
+cd C:\Users\Marie Helen Berger\github\year2_exam\style
+sass --watch styles.scss:styles.css
 
 
 

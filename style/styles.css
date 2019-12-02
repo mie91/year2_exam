@@ -8,7 +8,7 @@ Character Selection Avatars
 .charBox {
   border-radius: 50px;
   padding: 6vh;
-  margin: 2vh;
+  margin: 3vh;
   background: linear-gradient(60deg, #875368 0%, #d1adbc 50%, #875368 100%);
   background-position: -180px -180px, 0 0;
   background-image: -webkit-linear-gradient(top left, rgba(193, 103, 151, 0.8) 39%, rgba(255, 255, 255, 0.9) 45%, rgba(193, 103, 151, 0.8) 50%);
@@ -38,12 +38,12 @@ Character Selection Avatars
   transform: scale(1.1);
 }
 
-.avatars {
+.tubbie {
   max-width: 20vh;
   transition: all 0.7s;
 }
 
-.avatars:hover {
+.tubbie:hover {
   transform: scale(1.4);
 }
 
@@ -58,16 +58,6 @@ Other
   font-size: 1.1em;
 }
 
-.selection-container {
-  text-align: center;
-  font-family: "Rock Salt", cursive;
-  letter-spacing: 8px;
-  color: #eefeff;
-  font-size: 2em;
-  border-top: solid 2px white;
-  border-bottom: solid 2px white;
-}
-
 .startGame {
   font-family: "Antic Slab", serif;
   letter-spacing: 0.2em;
@@ -77,6 +67,7 @@ Other
   border-radius: 50px;
   text-align: center;
   transition: all 0.7s ease 0s;
+  cursor: pointer;
   border: solid 2px white;
   background-color: #49a3b1;
   color: #eefeff;
@@ -107,6 +98,24 @@ button:disabled:hover {
   cursor: not-allowed;
 }
 
+.theChosen.charBox {
+  box-shadow: 0 0 30px #49a3b1;
+  transform: scale(1.1);
+}
+
+.theChosen img {
+  transform: scale(1.2);
+}
+
+.selection-container {
+  text-align: center;
+  font-family: "Rock Salt", cursive;
+  letter-spacing: 3px;
+  color: #eefeff;
+  font-size: 2em;
+  margin-bottom: 2%;
+}
+
 /* =================================
 Navigation Bar
 ==================================== */
@@ -129,6 +138,7 @@ nav {
   border-radius: 50px;
   text-align: center;
   transition: all 0.7s ease 0s;
+  cursor: pointer;
   border: solid 2px white;
   background-color: #c16797;
   color: #FFE6F3;
@@ -207,6 +217,7 @@ nav {
   border-radius: 50px;
   text-align: center;
   transition: all 0.7s ease 0s;
+  cursor: pointer;
   border: solid 2px white;
   background-color: #49a3b1;
   color: #eefeff;
