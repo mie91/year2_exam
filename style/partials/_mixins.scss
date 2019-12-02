@@ -20,6 +20,12 @@ Buttons
    color: $brightpink;
 }
 
+@mixin white-gray-btn {
+   border: $whiteBorder;
+   background-color: $darkgray;
+   color: $white;
+}
+
 @mixin white-teal-btn {
    border: $whiteBorder;
    background-color: $teal;

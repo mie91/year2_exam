@@ -1,17 +1,14 @@
 /* =================================
 Navigation Bar
 ==================================== */
-
 header {
   width: 100%;
-  padding: 0px;
-  padding-bottom: 5px;
+  padding: 0 0 5px;
   text-align: center;
 }
 
 nav {
   margin: auto;
-
 }
 
 .navlink {
@@ -21,7 +18,7 @@ nav {
 }
 
 .navlink:hover:before {
-@include hover-white-before;
+  @include hover-white-before;
 }
 
 .navlink:hover {
@@ -33,13 +30,9 @@ nav {
   margin-bottom: 2%;
   margin-top: 2%;
 }
-
-
-
 /* =================================
   MODAL
 ==================================== */
-
 .modal {
   display: none;
   position: fixed;
@@ -50,6 +43,10 @@ nav {
   height: 100%;
   overflow: auto;
   background-color: rgba(0,0,0, 0.5);
+}
+
+.modalBox {
+  text-align: right;
 }
 
 .modal-content {
@@ -86,25 +83,13 @@ nav {
   margin-top: 5px;
 }
 
-
 .confirmHelp:hover {
   @include hover-white;
 }
-
-
-
-
-
 /* =================================
   Media Queries
 ==================================== */
-
-
-
-@media only screen and (max-width: 900px) {
-}
-
-
+@media only screen and (max-width: 900px) {}
 @media only screen and (max-width: 769px) {
   nav {
     text-align: center;
@@ -112,20 +97,29 @@ nav {
     width: 100%;
   }
 
-.logoimage img {
-  max-width: 50%;
-}
+  .logoimage img {
+    max-width: 65%;
+  }
 
-.navlink, .navlinkactive {
-  display: inline-flex;
+  .navlink,
+  .navlinkactive {
+    display: inline-flex;
+  }
 
-}
+  .modalBox {
+    text-align: center;
+    margin-left: auto;
+    font-size: 0.7em;
+  }
+
+  .header {
+    font-size: 0.8em;
+  }
 
 }
 @media only screen and (max-width: 425px) {
   .logoimage img {
-
+    max-width: 80%;
   }
 }
-@media only screen and (max-width: 375px) {
-}
+@media only screen and (max-width: 375px) {}

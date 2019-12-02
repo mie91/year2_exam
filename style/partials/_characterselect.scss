@@ -47,3 +47,19 @@ Other
   color: $brightteal;
   font-size: 1.1em;
 }
+
+.theChosen {
+  text-align: center;
+  font-family: $textFont;
+  letter-spacing: 8px;
+  color: $brightteal;
+  font-size: 2em;
+  border-top: $whiteBorder;
+  border-bottom: $whiteBorder;
+}
+
+.startGame {
+  @include basebutton;
+  @include white-gray-btn;
+  font-size: 1.3em;
+}

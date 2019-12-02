@@ -13,11 +13,8 @@
 
 <body>
   <header>
-    <header>
-      <div class="logoimage">
-        <a href="default.asp"><img class="logo-image" src="./images/logo/logo_tubbies_square1_v5.png" alt="Game Logo"></a>
-      </div>
-      <nav>
+    <nav>
+      <div class="modalBox">
         <button class="navlink" id="modalbtn">How to Play</button>
         <div id="helpModal" class="modal">
           <div class="modal-content">
@@ -26,63 +23,61 @@
               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.t</p>
             <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
               Excepteur sint occaecat cupidatat non proiden</p>
-              <div class="close">
-                <button class="confirmHelp">Got it!</button>
-              </div>
+            <div class="close">
+              <button class="confirmHelp">Got it!</button>
+            </div>
           </div>
         </div>
-      </nav>
-    </header>
+      </div>
+      <div class="logoimage">
+        <a href="default.asp"><img class="logo-image" src="./images/logo/logo_tubbies_square1_v5.png" alt="Game Logo"></a>
+      </div>
+    </nav>
   </header>
-
-
   <main>
+
     <div class="content-wrap">
       <div class="header">
-        <h1>Select your character</h1>
+        <h1>Please select your character</h1>
+      </div>
+      <div class="selection-container">
+        <div id="selectedPlayer" class="theChosen">None selected</div>
       </div>
       <div class="container">
-
-        <div class="charBox">
+        <div class="charBox" data-name="Jon Snow" data-id="1" id="jonSnow">
           <img class="avatars" src="./images/selection_avatars/jon1.png" alt="Cartoon avatar of Jon Snow">
         </div>
-        <div class="charBox">
+        <div class="charBox" data-name="Arya" data-id="1" id="arya">
           <img class="avatars" src="./images/selection_avatars/arya1.png" alt="Cartoon avatar of Arya Stark">
-          <div id="arya"></div>
         </div>
-        <div class="charBox">
+        <div class="charBox" data-name="Sansa" data-id="1" id="sansa">
           <img class="avatars" src="./images/selection_avatars/sansa1.png" alt="Cartoon avatar of Sansa Stark">
-          <div id="sansa"></div>
         </div>
-        <div class="charBox">
+        <div class="charBox" data-name="Cersei" data-id="1" id="cersei">
           <img class="avatars" src="./images/selection_avatars/cersei1.png" alt="Cartoon avatar of Cersei Lannister">
-          <div id="cersei"></div>
         </div>
-        <div class="charBox">
+        <div class="charBox" data-name="Jaime" data-id="1" id="jaime">
           <img class="avatars" src="./images/selection_avatars/jaime1.png" alt="Cartoon avatar of Jaime Lannister">
-          <div id="jaime"></div>
         </div>
-        <div class="charBox">
+        <div class="charBox" data-name="Tyrion" data-id="1" id="tyrion">
           <img class="avatars" src="./images/selection_avatars/tyrion1.png" alt="Cartoon avatar of Tyrion Lannister">
-          <div id="tyrion"></div>
         </div>
-        <div class="charBox">
+        <div class="charBox" data-name="Daenerys" data-id="1" id="dany">
           <img class="avatars" src="./images/selection_avatars/dany1.png" alt="Cartoon avatar of Daenarys Targaryen">
-          <div id="dany"></div>
         </div>
-        <div class="charBox">
+        <div class="charBox" data-name="Viserys" data-id="1" id="viserys">
           <img class="avatars" src="./images/selection_avatars/viserys1.png" alt="Cartoon avatar of Viserys Tragaryen">
-          <div id="viserys"></div>
         </div>
-        <div class="charBox">
+        <div class="charBox" data-name="Oberyn" data-id="1" id="oberyn">
           <img class="avatars" src="./images/selection_avatars/oberyn1.png" alt="Cartoon avatar of Oberyn Martell ">
-          <div id="oberyn"></div>
         </div>
-        <div class="charBox">
+        <div class="charBox" data-name="Ellaria" data-id="1" id="ellaria">
           <img class="avatars" src="./images/selection_avatars/ellaria1.png" alt="Cartoon avatar of Ellaria Sand">
-          <div id="ellaria"></div>
         </div>
       </div>
+      <button class="startGame" id="startGame" disabled>Start Game!</button>
+    </div>
+    </div>
     </div>
   </main>
   <footer>
@@ -90,6 +85,7 @@
     <p class="creator">Created by: Marie Helen Berger | 2019</p>
   </footer>
   <script src="./script/characters.js"></script>
+  <script src="./script/selection.js"></script>
   <script src="./script/modal.js"></script>
 </body>
 

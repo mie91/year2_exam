@@ -58,13 +58,39 @@ Other
   font-size: 1.1em;
 }
 
+.theChosen {
+  text-align: center;
+  font-family: "Antic Slab", serif;
+  letter-spacing: 8px;
+  color: #eefeff;
+  font-size: 2em;
+  border-top: solid 2px white;
+  border-bottom: solid 2px white;
+}
+
+.startGame {
+  font-family: "Antic Slab", serif;
+  letter-spacing: 0.2em;
+  margin: 10px;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 50px;
+  text-align: center;
+  transition: all 0.7s ease 0s;
+  border: solid 2px white;
+  background-color: #1e1b1f;
+  color: #ffffff;
+  font-size: 1.3em;
+  display: block;
+  margin: 0 auto;
+}
+
 /* =================================
 Navigation Bar
 ==================================== */
 header {
   width: 100%;
-  padding: 0px;
-  padding-bottom: 5px;
+  padding: 0 0 5px;
   text-align: center;
 }
 
@@ -118,6 +144,10 @@ nav {
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modalBox {
+  text-align: right;
 }
 
 .modal-content {
@@ -180,11 +210,27 @@ nav {
   }
 
   .logoimage img {
-    max-width: 50%;
+    max-width: 65%;
   }
 
-  .navlink, .navlinkactive {
+  .navlink,
+.navlinkactive {
     display: inline-flex;
+  }
+
+  .modalBox {
+    text-align: center;
+    margin-left: auto;
+    font-size: 0.7em;
+  }
+
+  .header {
+    font-size: 0.8em;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .logoimage img {
+    max-width: 80%;
   }
 }
 /* =================================
