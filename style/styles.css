@@ -58,6 +58,16 @@ Other
   font-size: 1.1em;
 }
 
+.selection-container {
+  text-align: center;
+  font-family: "Rock Salt", cursive;
+  letter-spacing: 3px;
+  color: #eefeff;
+  font-size: 2em;
+  margin-bottom: 2%;
+  text-shadow: 0px 5px 15px #49a3b1;
+}
+
 .startGame {
   font-family: "Antic Slab", serif;
   letter-spacing: 0.2em;
@@ -99,21 +109,97 @@ button:disabled:hover {
 }
 
 .theChosen.charBox {
-  box-shadow: 0 0 30px #49a3b1;
+  box-shadow: 0px 5px 40px #49a3b1;
   transform: scale(1.1);
+  background-color: white;
 }
 
 .theChosen img {
   transform: scale(1.2);
 }
 
-.selection-container {
-  text-align: center;
-  font-family: "Rock Salt", cursive;
-  letter-spacing: 3px;
-  color: #eefeff;
-  font-size: 2em;
-  margin-bottom: 2%;
+#dice {
+  border: 2px solid black;
+  background: white;
+  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+#dice.rolling {
+  color: red;
+  background: pink;
+  font-size: 20px;
+}
+
+.square {
+  transform: rotate(0);
+  height: 150px;
+  width: 150px;
+  margin: 3px;
+}
+
+.character-score-display {
+  font-size: 28px;
+}
+
+.board {
+  margin-top: 20px;
+  position: relative;
+}
+
+.tile-container {
+  display: flex;
+  justify-content: center;
+  width: 1000px;
+  flex-wrap: wrap;
+}
+
+.tile {
+  border: 2px solid #948b81;
+  background: #49a3b1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tile:nth-child(odd) {
+  background-color: #c16797;
+}
+
+.tile.start {
+  background: grey;
+  border: 2px solid 3f4437;
+}
+
+.tile.finish {
+  background: darkolivegreen;
+  border: 2px solid 3f4437;
+}
+
+.token {
+  width: 40px;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin: 10px 0;
+}
+
+.token-2 {
+  background: darkblue;
+}
+
+.token-1.start-only,
+.token-2.start-only {
+  position: absolute;
+  left: -50px;
+}
+
+.character-display {
+  color: white;
 }
 
 /* =================================

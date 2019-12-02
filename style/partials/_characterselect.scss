@@ -50,6 +50,17 @@ Other
 }
 
 
+.selection-container {
+  text-align: center;
+  font-family: $headerFont;
+  letter-spacing: 3px;
+  color: $brightteal;
+  font-size: 2em;
+  margin-bottom: 2%;
+  text-shadow: 0px 5px 15px $teal;
+
+}
+
 .startGame {
   @include basebutton;
   @include white-teal-btn;
@@ -77,20 +88,11 @@ button:disabled:hover{
 }
 
 .theChosen.charBox{
-    box-shadow: 0 0 30px $teal;
+    box-shadow: 0px 5px 40px $teal;
     transform: scale(1.1);
+    background-color: white;
 }
 
 .theChosen img{
     transform: scale(1.2);
-}
-
-
-.selection-container {
-  text-align: center;
-  font-family: $headerFont;
-  letter-spacing: 3px;
-  color: $brightteal;
-  font-size: 2em;
-  margin-bottom: 2%;
 }

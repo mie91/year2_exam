@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Game Title - Character Selection">
+  <meta name="keywords" content="The board game, startpage, Game of Thrones, Game, Boardgame, Cartoon, GOT, Fantasy">
+  <meta name="author" content="Marie Helen Berger">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/styles.css">
+  <title>Game Of Thrones</title>
+</head>
+
+<body>
+  <div class="content-wrap">
+    <header>
+      <nav>
+        <div class="logoimage">
+          <a href="default.asp"><img class="logo-image" src="./images/logo/logo_tubbies_square1_v5.png" alt="Game Logo"></a>
+        </div>
+        <div class="modalBox">
+          <button class="navlink" id="modalbtn">How to Play</button>
+          <div id="helpModal" class="modal">
+            <div class="modal-content">
+              <h1>How to play</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.t</p>
+              <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proiden</p>
+              <div class="close">
+                <button class="confirmHelp">Got it!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div id="player" class="player-display"></div>
+
+        <div id="dice" class="dice">Dice</div>
+
+        <div class="character-display">
+          Score:
+          <span id="characterScoreDisplay" class="character-score-display"></span>
+        </div>
+
+        <div class="board">
+          <div class="tile-container">
+
+            <div class="tile square start">
+              <div id="token" class="token"></div>
+            </div>
+            <div class="tile square">2</div>
+            <div class="tile square">3</div>
+            <div class="tile square">4</div>
+            <div class="tile square">5</div>
+            <div class="tile square">6</div>
+            <div class="tile square">7</div>
+            <div class="tile square">8</div>
+            <div class="tile square">9</div>
+            <div class="tile square">10</div>
+            <div class="tile square">11</div>
+            <div class="tile square">12</div>
+            <div class="tile square">13</div>
+            <div class="tile square">14</div>
+            <div class="tile square">15</div>
+            <div class="tile square">16</div>
+            <div class="tile square">17</div>
+            <div class="tile square">18</div>
+            <div class="tile square">19</div>
+            <div class="tile square">20</div>
+            <div class="tile square">21</div>
+            <div class="tile square">22</div>
+            <div class="tile square">23</div>
+            <div class="tile square">24</div>
+            <div class="tile square">25</div>
+            <div class="tile square">26</div>
+            <div class="tile square">27</div>
+            <div class="tile square">28</div>
+            <div class="tile square">29</div>
+            <div class="tile square finish">30</div>
+
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p class="creator">Created by: Marie Helen Berger | 2019</p>
+    </footer>
+    <script src="./script/characters.js"></script>
+    <script src="./script/thegame.js"></script>
+    <script src="./script/modal.js"></script>
+</body>
+
+</html>
