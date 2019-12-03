@@ -26,6 +26,18 @@ Character Selection Avatars
   transform: scale(1.1);
 }
 
+.charinfo {
+  text-align: center;
+  margin: auto;
+  background: rgba($white, 0.5);
+  border-radius: 20px;
+}
+
+.charinfo p {
+  padding: 5px;
+  font-size: 1.2em;
+  font-family: $textFont;
+}
 
 .tubbie {
 	max-width: 20vh;

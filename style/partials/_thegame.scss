@@ -1,46 +1,5 @@
 
 
-
-#theDice {
-  background: linear-gradient(130deg, rgba($darkgray, 1) 0%, rgba($white, 1) 48%, rgba($darkgray, 1) 100%);
-  border-radius: 10%;
-  width: 100px;
-  height: 100px;
-  font-size: 1.8em;
-  text-align: center;
-  font-family: $headerFont;
-  text-shadow: 0px 4px 5px #000000;
-  transition: all 0.7s ease 0s;
-  margin: auto;
-  margin-bottom: 5%;
-
-}
-
-#theDice h4 {
-  font-family: $textFont;
-  margin: 25%;
-}
-
-#theDice:hover {
-  animation: shake 1s cubic-bezier(.36,.07,.19,.97) both;
-  @include hover-white;
-  color: $black;
-  text-shadow: 0px 4px 5px #000000;
-}
-
-#theDice.rolls {
-  animation-name: spin;
-  animation-duration: 500ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-}
-
-.dice-score-holder {
-  display: block;
-  text-align: center;
-  margin: auto;
-}
-
 .character-display, #player {
   font-size: 2em;
   font-family: $textFont;
@@ -53,7 +12,7 @@
 }
 
 .board {
-  margin-top: 20px;
+  margin-top: 2%;
   position: relative;
 }
 
@@ -80,7 +39,7 @@
   align-items: center;
 }
 
-.tile:nth-child(odd) {
+.tile:nth-child(2n +1) {
   background-color: $pink;
 }
 

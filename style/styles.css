@@ -68,6 +68,19 @@ Character Selection Avatars
   transform: scale(1.1);
 }
 
+.charinfo {
+  text-align: center;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+}
+
+.charinfo p {
+  padding: 5px;
+  font-size: 1.2em;
+  font-family: "Antic Slab", serif;
+}
+
 .tubbie {
   max-width: 20vh;
   transition: all 0.7s;
@@ -155,8 +168,44 @@ button:disabled:hover {
   margin: 10px 0;
 }
 
+#playerToken.jonSnow {
+  background-image: url("./images/selection_avatars/jon1.png");
+}
+
+#playerToken.arya {
+  background-image: url("./images/selection_avatars/arya.png");
+}
+
 #playerToken.sansa {
   background-image: url("./images/selection_avatars/sansa1.png");
+}
+
+#playerToken.cersei {
+  background-image: url("./images/selection_avatars/cersei1.png");
+}
+
+#playerToken.jaime {
+  background-image: url("./images/selection_avatars/jaime1.png");
+}
+
+#playerToken.tyrion {
+  background-image: url("./images/selection_avatars/tyrion1.png");
+}
+
+#playerToken.dany {
+  background-image: url("./images/selection_avatars/dany1.png");
+}
+
+#playerToken.viserys {
+  background-image: url("./images/selection_avatars/viserys1.png");
+}
+
+#playerToken.oberyn {
+  background-image: url("./images/selection_avatars/oberyn1.png");
+}
+
+#playerToken.ellaria {
+  background-image: url("./images/selection_avatars/ellaria1.png");
 }
 
 #theDice {
@@ -212,7 +261,7 @@ button:disabled:hover {
 }
 
 .board {
-  margin-top: 20px;
+  margin-top: 2%;
   position: relative;
 }
 
@@ -238,7 +287,7 @@ button:disabled:hover {
   align-items: center;
 }
 
-.tile:nth-child(odd) {
+.tile:nth-child(2n+1) {
   background-color: #c16797;
 }
 

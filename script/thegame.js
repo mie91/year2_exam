@@ -19,7 +19,7 @@ theDice.addEventListener("click", function() {
   theDice.classList.add("rolls");
 
   setTimeout(function() {
-    let rollDice = Math.floor(Math.random() * 6) - 1;
+    let rollDice = Math.floor(Math.random() * 6) + 1;
     updateScore(rollDice);
     tokenProgress();
 
