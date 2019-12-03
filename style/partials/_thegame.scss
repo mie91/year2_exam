@@ -1,82 +1,94 @@
-#dice {
-    border: 2px solid black;
-    background: white;
-    border-radius: 5px;
-    width: 50px;
-    height: 50px;
-    margin: 15px 0;
-    font-size: 18px;
+#theDice {
+  background: linear-gradient(130deg, rgba($darkgray, 1) 0%, rgba($white, 1) 48%, rgba($darkgray, 1) 100%);
+  border-radius: 10%;
+  width: 100px;
+  height: 100px;
+  font-size: 1.8em;
+  text-align: center;
+  font-family: $headerFont;
+  text-shadow: 0px 4px 5px #000000;
+  transition: all 0.7s ease 0s;
+
 }
 
-#dice.rolling {
-    color: red;
-    background: pink;
-    font-size: 20px;
+#theDice h4 {
+  font-family: $textFont;
+  margin: 25%;
+}
+
+#theDice:hover {
+  animation: shake 1s cubic-bezier(.36,.07,.19,.97) both;
+  @include hover-white;
+  color: $black;
+  text-shadow: 0px 4px 5px #000000;
+}
+
+#theDice.rolls {
+  animation-name: spin;
+  animation-duration: 500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
 .square {
-    transform: rotate(0);
-    height: 150px;
-    width: 150px;
-    margin: 3px;
+  transform: rotate(0);
+  height: 150px;
+  width: 150px;
+  margin: 3px;
 }
+
 .character-score-display {
-    font-size: 28px;
+  font-size: 28px;
 }
 
 .board {
-    margin-top: 20px;
-    position: relative;
+  margin-top: 20px;
+  position: relative;
 }
 
 .tile-container {
-    display: flex;
-    justify-content: center;
-    width: 1000px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  width: 1000px;
+  flex-wrap: wrap;
 }
 
 .tile {
-    border: 2px solid #948b81;
-    background: $teal;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  background: $teal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.tile:nth-child(odd){
+.tile:nth-child(odd) {
   background-color: $pink;
 }
 
 .tile.start {
-    background: grey;
-    border: 2px solid 3f4437;
+  background: linear-gradient(-130deg, rgba($darkgray, 1) 0%, rgba($white, 1) 48%, rgba($darkgray, 1) 100%);
+  border: 2px solid 3f4437;
 }
 
 .tile.finish {
-    background: darkolivegreen;
-    border: 2px solid 3f4437;
+  background: linear-gradient(130deg, rgba(darkgreen, 1) 0%, rgba($white, 1) 48%, rgba(darkgreen, 1) 100%);
+  border: 2px solid 3f4437;
 }
 
-.token {
-    width: 40px;
-    height: 40px;
-    border: 2px solid black;
-    border-radius: 50%;
-    margin: 10px 0;
-}
-
-.token-2 {
-    background: darkblue;
+.playerToken {
+  width: 40px;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin: 10px 0;
 }
 
 .token-1.start-only,
 .token-2.start-only {
-    position: absolute;
-    left: -50px;
+  position: absolute;
+  left: -50px;
 }
 
 .character-display {
-    color: white;
+  color: white;
 }

@@ -2,6 +2,28 @@
 /* =================================
 Buttons
 ==================================== */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-5px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(4px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-3px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(6px, 0, 0);
+  }
+}
 /* =================================
 Character Selection Avatars
 ==================================== */
@@ -118,20 +140,37 @@ button:disabled:hover {
   transform: scale(1.2);
 }
 
-#dice {
-  border: 2px solid black;
-  background: white;
-  border-radius: 5px;
-  width: 50px;
-  height: 50px;
-  margin: 15px 0;
-  font-size: 18px;
+#theDice {
+  background: linear-gradient(130deg, #1e1b1f 0%, white 48%, #1e1b1f 100%);
+  border-radius: 10%;
+  width: 100px;
+  height: 100px;
+  font-size: 1.8em;
+  text-align: center;
+  font-family: "Rock Salt", cursive;
+  text-shadow: 0px 4px 5px #000000;
+  transition: all 0.7s ease 0s;
 }
 
-#dice.rolling {
-  color: red;
-  background: pink;
-  font-size: 20px;
+#theDice h4 {
+  font-family: "Antic Slab", serif;
+  margin: 25%;
+}
+
+#theDice:hover {
+  animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  color: #ffffff;
+  box-shadow: 0 0 30px #ffffff;
+  text-shadow: 0 0 30px #ffffff;
+  color: #000000;
+  text-shadow: 0px 4px 5px #000000;
+}
+
+#theDice.rolls {
+  animation-name: spin;
+  animation-duration: 500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
 .square {
@@ -158,7 +197,6 @@ button:disabled:hover {
 }
 
 .tile {
-  border: 2px solid #948b81;
   background: #49a3b1;
   display: flex;
   flex-direction: column;
@@ -171,25 +209,21 @@ button:disabled:hover {
 }
 
 .tile.start {
-  background: grey;
+  background: linear-gradient(-130deg, #1e1b1f 0%, white 48%, #1e1b1f 100%);
   border: 2px solid 3f4437;
 }
 
 .tile.finish {
-  background: darkolivegreen;
+  background: linear-gradient(130deg, darkgreen 0%, white 48%, darkgreen 100%);
   border: 2px solid 3f4437;
 }
 
-.token {
+.playerToken {
   width: 40px;
   height: 40px;
   border: 2px solid black;
   border-radius: 50%;
   margin: 10px 0;
-}
-
-.token-2 {
-  background: darkblue;
 }
 
 .token-1.start-only,
