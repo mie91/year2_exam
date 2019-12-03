@@ -79,6 +79,8 @@ Character Selection Avatars
   padding: 5px;
   font-size: 1.4em;
   font-family: "Antic Slab", serif;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 .tubbie {
@@ -93,6 +95,13 @@ Character Selection Avatars
 /* =================================
 Other
 ==================================== */
+.characterSelectInfo {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+}
+
 .header {
   text-align: center;
   font-family: "Antic Slab", serif;
@@ -100,6 +109,7 @@ Other
   color: #eefeff;
   font-size: 1.1em;
   text-shadow: 0px 5px 15px #49a3b1;
+  margin-right: auto;
 }
 
 .selection-container {
