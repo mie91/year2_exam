@@ -107,3 +107,12 @@ Buttons
     transform: translate3d(6px, 0, 0);
   }
 }
+
+@keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}

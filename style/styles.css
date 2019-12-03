@@ -24,6 +24,14 @@ Buttons
     transform: translate3d(6px, 0, 0);
   }
 }
+@keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
 /* =================================
 Character Selection Avatars
 ==================================== */
@@ -140,6 +148,17 @@ button:disabled:hover {
   transform: scale(1.2);
 }
 
+.playerToken {
+  width: 60px;
+  height: 80px;
+  border: 2px solid black;
+  margin: 10px 0;
+}
+
+#playerToken.sansa {
+  background-image: url("./images/selection_avatars/sansa1.png");
+}
+
 #theDice {
   background: linear-gradient(130deg, #1e1b1f 0%, white 48%, #1e1b1f 100%);
   border-radius: 10%;
@@ -150,6 +169,8 @@ button:disabled:hover {
   font-family: "Rock Salt", cursive;
   text-shadow: 0px 4px 5px #000000;
   transition: all 0.7s ease 0s;
+  margin: auto;
+  margin-bottom: 5%;
 }
 
 #theDice h4 {
@@ -173,15 +194,21 @@ button:disabled:hover {
   animation-timing-function: ease-in-out;
 }
 
-.square {
-  transform: rotate(0);
-  height: 150px;
-  width: 150px;
-  margin: 3px;
+.dice-score-holder {
+  display: block;
+  text-align: center;
+  margin: auto;
 }
 
-.character-score-display {
-  font-size: 28px;
+.character-display, #player {
+  font-size: 2em;
+  font-family: "Antic Slab", serif;
+  color: #eefeff;
+  margin: auto;
+}
+
+#player {
+  margin-bottom: 3%;
 }
 
 .board {
@@ -194,6 +221,13 @@ button:disabled:hover {
   justify-content: center;
   width: 1000px;
   flex-wrap: wrap;
+}
+
+.square {
+  transform: rotate(0);
+  height: 150px;
+  width: 150px;
+  margin: 2px;
 }
 
 .tile {
@@ -216,24 +250,6 @@ button:disabled:hover {
 .tile.finish {
   background: linear-gradient(130deg, darkgreen 0%, white 48%, darkgreen 100%);
   border: 2px solid 3f4437;
-}
-
-.playerToken {
-  width: 40px;
-  height: 40px;
-  border: 2px solid black;
-  border-radius: 50%;
-  margin: 10px 0;
-}
-
-.token-1.start-only,
-.token-2.start-only {
-  position: absolute;
-  left: -50px;
-}
-
-.character-display {
-  color: white;
 }
 
 /* =================================

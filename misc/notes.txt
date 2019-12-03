@@ -3,8 +3,23 @@ sass --watch styles.scss:styles.css
 
 
 
+"<p>" + "<b>" + "Founder: " + "</b>" + compinfo.founder + "</p>" +
+		"<p>" + "<b>" + "Number of Employees: " + "</b>" + compinfo.employees + "</p>" +
+		"<p>" + "<b>" + "Vehicles: " + "</b>" + compinfo.vehicles + "</p>" +
+		"<p>" + "<b>" + "Valuation: " + "</b>" + compinfo.valuation + "</p>" +
+		"<p>" + "<b>" + "Links: " + "</b>" + "<ul>" +
+		"<li>" + "<a href='" + compinfo.links.twitter + "'>Twitter</a>" +
+		"<li>" + "<a href='" + compinfo.links.flickr + "'>Flickr</a>" +
+		"<li>" + "<a href='" + compinfo.links.elon_twitter + "'>Elon's Twitter</a>" +
+		"<li>" + "<a href='" + compinfo.links.website + "'>Main</a>" +
+		"</ul>" +
+		"</p>";
 
 
+
+var token = document.getElementById("token");
+var characterClass = character.toLowerCase().replace(" ", "-");
+token.classList.add(characterClass);
 
 
 
