@@ -86,8 +86,7 @@ fetchCharacters(1770).then(function(data) {
     charOberyn = data;
     document.getElementById("oberyn").innerHTML +=
     "<div class= 'charinfo'>" +
-    "<p>" + charOberyn.name + "</p>" + "</div>";
-    document.body.innerHTML = document.body.innerHTML.replace(/Nymeros/g, ' ');
+    "<p>" + charOberyn.name.replace(/Nymeros/g, ' ') + "</p>" + "</div>";
     console.log(charOberyn);
 });
 

@@ -2,46 +2,56 @@
 .playerToken {
   width: 60px;
   height: 80px;
-  border: 2px solid black;
+  border: 1px solid black;
   margin: 10px 0;
 
 }
 
-#playerToken.jonSnow {
+#playerToken.jon {
   background-image: url("./images/selection_avatars/jon1.png");
+  background-repeat: no-repeat;
 }
 
-#playerToken.arya {
+.playerToken.arya {
   background-image: url("./images/selection_avatars/arya.png");
+  background-repeat: no-repeat;
 }
 
-#playerToken.sansa {
+.playerToken.sansa {
   background-image: url("./images/selection_avatars/sansa1.png");
+  background-repeat: no-repeat;
 }
 
-#playerToken.cersei {
+.playerToken.cersei {
   background-image: url("./images/selection_avatars/cersei1.png");
+  background-repeat: no-repeat;
 }
 
-#playerToken.jaime {
+.playerToken.jaime {
   background-image: url("./images/selection_avatars/jaime1.png");
+  background-repeat: no-repeat;
 }
 
-#playerToken.tyrion {
+.playerToken.tyrion {
   background-image: url("./images/selection_avatars/tyrion1.png");
+  background-repeat: no-repeat;
 }
 
-#playerToken.dany {
+.playerToken.dany {
   background-image: url("./images/selection_avatars/dany1.png");
+  background-repeat: no-repeat;
 }
-#playerToken.viserys {
+.playerToken.viserys {
   background-image: url("./images/selection_avatars/viserys1.png");
+  background-repeat: no-repeat;
 }
 
-#playerToken.oberyn {
+.playerToken.oberyn {
   background-image: url("./images/selection_avatars/oberyn1.png");
+  background-repeat: no-repeat;
 }
 
-#playerToken.ellaria {
+.playerToken.ellaria {
   background-image: url("./images/selection_avatars/ellaria1.png");
+  background-repeat: no-repeat;
 }
