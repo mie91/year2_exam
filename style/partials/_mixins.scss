@@ -46,11 +46,11 @@ Buttons
 }
 
 @mixin pink-gradient {
-  background: linear-gradient(60deg, rgba(135,83,104,1) 0%, rgba(209,173,188,1) 50%, rgba(135,83,104,1) 100%);
+  background: linear-gradient(60deg, rgba($pink, 1) 0%, rgba($brightpink, 1) 50%, rgba($pink,1) 100%);
 }
 
 @mixin teal-gradient {
-  background: linear-gradient(60deg, rgba(73,127,137,1) 0%, rgba(172,205,212,1) 50%, rgba(73,127,137,1) 100%);
+  background: linear-gradient(60deg, rgba($teal, 1) 0%, rgba($brightteal, 1) 50%, rgba($teal, 1) 100%);
 }
 
 

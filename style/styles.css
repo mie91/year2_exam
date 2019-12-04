@@ -32,6 +32,14 @@ Buttons
     background-position: top right;
   }
 }
+/*$black: #000000;
+$white : #ffffff;
+
+$darkgray: #1e1b1f;
+$pink: #c16797;
+$teal: #49a3b1;
+$brightteal: #eefeff;
+$brightpink: #FFE6F3;*/
 /* =================================
 Character Selection Avatars
 ==================================== */
@@ -39,18 +47,12 @@ Character Selection Avatars
   border-radius: 50px;
   padding: 50px;
   margin: 5px;
-  background: linear-gradient(60deg, #875368 0%, #d1adbc 50%, #875368 100%);
-  background-position: -180px -180px, 0 0;
-  background-image: -webkit-linear-gradient(top left, rgba(193, 103, 151, 0.8) 39%, rgba(255, 255, 255, 0.9) 45%, rgba(193, 103, 151, 0.8) 50%);
-  background-size: 250% 250%, 100% 100%;
+  background: linear-gradient(60deg, #702849 0%, #ffdaec 50%, #702849 100%);
   max-width: 250px;
 }
 
 .charBox:nth-child(odd) {
-  background: linear-gradient(60deg, #497f89 0%, #accdd4 50%, #497f89 100%);
-  background-position: -180px -180px, 0 0;
-  background-image: -webkit-linear-gradient(top left, rgba(73, 163, 177, 0.8) 39%, rgba(255, 255, 255, 0.9) 45%, rgba(73, 163, 177, 0.8) 50%);
-  background-size: 250% 250%, 100% 100%;
+  background: linear-gradient(60deg, #1a5b6a 0%, #e5fdff 50%, #1a5b6a 100%);
 }
 
 .charBox:hover {
@@ -73,14 +75,15 @@ Character Selection Avatars
   text-align: center;
   border-radius: 20px;
   margin-top: 50px;
+  background-color: rgba(45, 40, 47, 0.7);
 }
 
 .charinfo p {
-  padding: 5px;
+  padding: 7px;
   font-size: 1.4em;
   font-family: "Antic Slab", serif;
   margin-bottom: 0px;
-  padding-bottom: 0px;
+  color: #ffffff;
 }
 
 .tubbie {
@@ -100,15 +103,16 @@ Other
   justify-content: center;
   margin: 0px;
   padding: 0px;
+  background: linear-gradient(60deg, #1a5b6a 0%, #e5fdff 50%, #1a5b6a 100%);
 }
 
 .header {
   text-align: center;
   font-family: "Antic Slab", serif;
   letter-spacing: 5px;
-  color: #eefeff;
+  color: #e5fdff;
   font-size: 1.1em;
-  text-shadow: 0px 5px 15px #49a3b1;
+  text-shadow: 0px 5px 15px #1a5b6a;
   margin-right: auto;
 }
 
@@ -116,10 +120,10 @@ Other
   text-align: center;
   font-family: "Rock Salt", cursive;
   letter-spacing: 3px;
-  color: #eefeff;
+  color: #e5fdff;
   font-size: 2em;
   margin-bottom: 5px;
-  text-shadow: 0px 5px 15px #c16797;
+  text-shadow: 0px 5px 15px #702849;
 }
 
 .startGame {
@@ -133,9 +137,10 @@ Other
   transition: all 0.7s ease 0s;
   cursor: pointer;
   border: solid 2px white;
-  background-color: #49a3b1;
-  color: #eefeff;
+  background-color: #1a5b6a;
+  color: #e5fdff;
   font-size: 1.3em;
+  background-color: #1F553F;
 }
 
 .navlink:hover:before {
@@ -153,12 +158,12 @@ Other
 button:disabled {
   border: 2px solid #ffffff;
   background-color: #cccccc;
-  color: #1e1b1f;
+  color: #2D282F;
 }
 
 button:disabled:hover {
   box-shadow: none;
-  color: #1e1b1f;
+  color: #2D282F;
   cursor: not-allowed;
 }
 
@@ -239,7 +244,7 @@ button:disabled:hover {
 }
 
 #theDice {
-  background: linear-gradient(130deg, #1e1b1f 0%, white 48%, #1e1b1f 100%);
+  background: linear-gradient(130deg, #2d282f 0%, white 48%, #2d282f 100%);
   border-radius: 10%;
   width: 100px;
   height: 100px;
@@ -282,7 +287,7 @@ button:disabled:hover {
 .character-display, #player {
   font-size: 2em;
   font-family: "Antic Slab", serif;
-  color: #eefeff;
+  color: #e5fdff;
   margin: auto;
 }
 
@@ -310,7 +315,7 @@ button:disabled:hover {
 }
 
 .tile {
-  background: #49a3b1;
+  background: #1a5b6a;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -318,11 +323,11 @@ button:disabled:hover {
 }
 
 .tile:nth-child(2n+1) {
-  background-color: #c16797;
+  background-color: #702849;
 }
 
 .tile.start {
-  background: linear-gradient(-130deg, #1e1b1f 0%, white 48%, #1e1b1f 100%);
+  background: linear-gradient(-130deg, #2d282f 0%, white 48%, #2d282f 100%);
   border: 2px solid 3f4437;
 }
 
@@ -355,8 +360,8 @@ nav {
   transition: all 0.7s ease 0s;
   cursor: pointer;
   border: solid 2px white;
-  background-color: #c16797;
-  color: #FFE6F3;
+  background-color: #702849;
+  color: #ffdaec;
   font-size: 1.3em;
 }
 
@@ -398,24 +403,31 @@ nav {
 }
 
 .modal-content {
-  background-color: #1e1b1f;
+  background-color: #2D282F;
   margin: 10% auto;
-  padding: 20px;
   border: solid 2px white;
   border-radius: 20px;
   width: 75%;
   text-align: left;
-  color: #eefeff;
+  color: #e5fdff;
   font-family: "Antic Slab", serif;
   box-shadow: 0 0 10px #ffffff;
   font-size: 1.1em;
 }
 
+.modal-content p {
+  padding: 20px;
+}
+
 .modal-content h1 {
   font-family: "Rock Salt", cursive;
-  color: #49a3b1;
+  color: #1a5b6a;
   text-align: center;
   font-size: 2em;
+  background: rgba(229, 253, 255, 0.7);
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  margin: 0px;
 }
 
 .close {
@@ -434,8 +446,8 @@ nav {
   transition: all 0.7s ease 0s;
   cursor: pointer;
   border: solid 2px white;
-  background-color: #49a3b1;
-  color: #eefeff;
+  background-color: #1a5b6a;
+  color: #e5fdff;
   font-size: 1.2em;
   cursor: pointer;
   margin-top: 5px;
@@ -523,11 +535,11 @@ footer {
 
 .creator {
   font-family: "Antic Slab", serif;
-  color: rgba(193, 103, 151, 0.2);
+  color: rgba(112, 40, 73, 0.2);
 }
 
 .creator:hover {
-  color: #c16797;
+  color: #702849;
 }
 
 /*# sourceMappingURL=styles.css.map */

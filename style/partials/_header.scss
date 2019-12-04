@@ -52,7 +52,7 @@ nav {
 .modal-content {
   background-color: $darkgray;
   margin: 10% auto;
-  padding: 20px;
+
   border: $whiteBorder;
   border-radius: 20px;
   width: 75%;
@@ -63,11 +63,19 @@ nav {
   font-size: 1.1em;
 }
 
+.modal-content p {
+  padding: 20px;
+}
+
 .modal-content h1 {
   font-family: $headerFont;
   color: $teal;
   text-align: center;
   font-size: 2em;
+  background: rgba($brightteal, 0.7);
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  margin: 0px;
 }
 
 .close {
