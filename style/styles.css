@@ -46,6 +46,7 @@ Character Selection Avatars
 .charBox {
   border-radius: 50px;
   padding: 50px;
+  padding-bottom: 20px;
   margin: 5px;
   background: linear-gradient(60deg, #702849 0%, #ffdaec 50%, #702849 100%);
   max-width: 250px;
@@ -88,7 +89,9 @@ Character Selection Avatars
 
 .tubbie {
   max-width: 150px;
-  transition: all 0.7s;
+  transition: all 0.5s;
+  margin: 0px;
+  padding: 0px;
 }
 
 .tubbie:hover {
@@ -101,9 +104,7 @@ Other
 .characterSelectInfo {
   display: flex;
   justify-content: center;
-  margin: 0px;
-  padding: 0px;
-  background: linear-gradient(60deg, #1a5b6a 0%, #e5fdff 50%, #1a5b6a 100%);
+  align-items: center;
 }
 
 .header {
@@ -113,7 +114,7 @@ Other
   color: #e5fdff;
   font-size: 1.1em;
   text-shadow: 0px 5px 15px #1a5b6a;
-  margin-right: auto;
+  margin-right: 50px;
 }
 
 .selection-container {
@@ -123,7 +124,7 @@ Other
   color: #e5fdff;
   font-size: 2em;
   margin-bottom: 5px;
-  text-shadow: 0px 5px 15px #702849;
+  text-shadow: 0px 5px 15px #1a5b6a;
 }
 
 .startGame {
@@ -421,13 +422,14 @@ nav {
 
 .modal-content h1 {
   font-family: "Rock Salt", cursive;
-  color: #1a5b6a;
+  color: #e5fdff;
   text-align: center;
   font-size: 2em;
-  background: rgba(229, 253, 255, 0.7);
+  background: rgba(26, 91, 106, 0.7);
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   margin: 0px;
+  border-bottom: solid 2px #e5fdff;
 }
 
 .close {

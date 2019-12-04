@@ -69,13 +69,14 @@ nav {
 
 .modal-content h1 {
   font-family: $headerFont;
-  color: $teal;
+  color: $brightteal;
   text-align: center;
   font-size: 2em;
-  background: rgba($brightteal, 0.7);
+  background: rgba($teal, 0.7);
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   margin: 0px;
+  border-bottom: solid 2px $brightteal;
 }
 
 .close {
