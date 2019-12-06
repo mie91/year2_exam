@@ -7,13 +7,13 @@ Character Selection Avatars
 	padding: 50px;
   padding-bottom: 20px;
 	margin: 5px;
-  @include pink-gradient;
+  @include pink-gradient-2;
   //@include pinkshine;
   max-width: 250px;
 }
 
 .charBox:nth-child(odd) {
- @include teal-gradient;
+ @include teal-gradient-2;
 // @include tealshine;
 }
 
