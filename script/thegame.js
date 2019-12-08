@@ -26,7 +26,6 @@ theDice.addEventListener("click", function() {
     let diceClass = "theDice" + rollDice;
     theDice.classList = "";
     theDice.classList.add(diceClass);
-    theDice.innerHTML = rollDice;
     theDice.classList.remove("rolls");
 
   }, 500);
