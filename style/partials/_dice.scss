@@ -1,15 +1,17 @@
 #theDice {
-  background: linear-gradient(130deg, rgba($darkgray, 1) 0%, rgba($white, 1) 48%, rgba($darkgray, 1) 100%);
+  background-color: rgba($white, 1);
   border-radius: 10%;
   width: 100px;
   height: 100px;
-  font-size: 1.8em;
+  font-size: 0em;
   text-align: center;
   font-family: $headerFont;
   text-shadow: 0px 4px 5px #000000;
   transition: all 0.7s ease 0s;
   margin: auto;
   margin-bottom: 5px;
+  box-shadow: 0px 5px 12px 2px rgba($black, 0.75);
+
 
 }
 
@@ -37,4 +39,38 @@
   display: block;
   text-align: center;
   margin: auto;
+}
+
+#theDice.theDice1 {
+  background-image: url("../images/dice/one.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+#theDice.theDice2 {
+  background-image: url("../images/dice/two.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+#theDice.theDice3 {
+  background-image: url("../images/dice/three.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+#theDice.theDice4 {
+  background-image: url("../images/dice/four.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#theDice.theDice5 {
+  background-image: url("../images/dice/five.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#theDice.theDice6 {
+  background-image: url("../images/dice/six.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }

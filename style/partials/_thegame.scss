@@ -5,10 +5,13 @@
   font-family: $textFont;
   color: $brightteal;
   margin: auto;
+  text-shadow: 0px 5px 15px $pink;
 }
 
 #player {
   margin-bottom: 15px;
+  font-family: $headerFont;
+  text-shadow: 0px 5px 15px $teal;
 }
 
 .board {
@@ -27,9 +30,9 @@
 
   background: linear-gradient(-270deg, #000, #702849, #1a5b6a, #000);
 	background-size: 600% 600%;
-	-webkit-animation: Gradient 45s ease infinite;
-	-moz-animation: Gradient 45s ease infinite;
-	animation: Gradient 45s ease infinite;
+	-webkit-animation: Gradient 40s ease infinite;
+	-moz-animation: Gradient 40s ease infinite;
+	animation: Gradient 40s ease infinite;
 }
 
 @-webkit-keyframes Gradient {
@@ -65,6 +68,7 @@
   border-radius: 40px;
   color: $white;
   font-family: $headerFont;
+  font-size: 1.2em;
   box-shadow: 0px 5px 12px 2px rgba($black, 0.75);
 
 }
@@ -82,10 +86,13 @@
 
 .tile.start {
 
-  border: 2px solid 3f4437;
+  background:linear-gradient(130deg, rgba($pink, 1) 0%, rgba($brightteal, 0.4) 50%, rgba($teal, 1) 100%);
 }
+
+
 
 .tile.finish {
 
-  border: 2px solid 3f4437;
+  border: 2px solid $green;
+  background:linear-gradient(130deg, rgba($darkgreen, 1) 0%, rgba($green, 1) 50%, rgba($darkgreen, 1) 100%);
 }
