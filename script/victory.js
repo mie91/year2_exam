@@ -6,6 +6,7 @@ console.log(player);
 
 
 let playerDisplay = document.getElementById("player");
-playerDisplay.innerHTML = player;
-let playerToken = document.getElementById("playerToken");
-playerToken.classList.add(player);
+playerDisplay.innerHTML = "<div class= 'victoryName'>" +
+"<h2>" + player + "</h2>" + "</div>";
+let victoryTubbie = document.getElementById("victoryTubbie");
+victoryTubbie.classList.add(player);

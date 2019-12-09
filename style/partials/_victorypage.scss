@@ -1,1 +1,88 @@
+.bodyVictory {
+  @include radial-dark;
+}
 
+.victoryBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.victoryTubbie, h1 {
+  font-family: $textFont;
+  color: $white;
+  text-shadow: 0px 5px 10px $black;
+  font-size: 4em;
+  margin: 0px;
+}
+
+.victoryName {
+  text-shadow: 0px 5px 10px $black;
+
+}
+
+.victoryTubbie {
+  width: 300px;
+  height: 380px;
+  margin: 0px;
+}
+
+.victoryTubbie.Jon {
+  background-image: url("../images/selection_avatars/jon1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.victoryTubbie.Arya {
+  background-image: url("../images/selection_avatars/arya1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.victoryTubbie.Sansa {
+  background-image: url("../images/selection_avatars/sansa1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.victoryTubbie.Cersei {
+  background-image: url("../images/selection_avatars/cersei1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.victoryTubbie.Jaime {
+  background-image: url("../images/selection_avatars/jaime1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.victoryTubbie.Tyrion {
+  background-image: url("../images/selection_avatars/tyrion1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.victoryTubbie.Daenerys {
+  background-image: url("../images/selection_avatars/dany1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.victoryTubbie.Viserys {
+  background-image: url("../images/selection_avatars/viserys1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.victoryTubbie.Oberyn {
+  background-image: url("../images/selection_avatars/oberyn1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.victoryTubbie.Ellaria {
+  background-image: url("../images/selection_avatars/ellaria1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}

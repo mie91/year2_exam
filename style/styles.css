@@ -426,7 +426,8 @@ button:disabled:hover {
 .dice-score-holder {
   float: left;
   margin: 10px;
-  padding: 10px;
+  margin-right: 30px;
+  padding: 20px;
   box-shadow: 0px 5px 12px 2px rgba(0, 0, 0, 0.75);
   border-radius: 40px;
   border: solid #ffffff 2px;
@@ -509,6 +510,95 @@ button:disabled:hover {
   background: linear-gradient(130deg, #1f553f 0%, #3ca77b 50%, #1f553f 100%);
 }
 
+.bodyVictory {
+  background: radial-gradient(circle, #b3b3b3 0%, #2d282f 30%, black 64%);
+}
+
+.victoryBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.victoryTubbie, h1 {
+  font-family: "Antic Slab", serif;
+  color: #ffffff;
+  text-shadow: 0px 5px 10px #000000;
+  font-size: 4em;
+  margin: 0px;
+}
+
+.victoryName {
+  text-shadow: 0px 5px 10px #000000;
+}
+
+.victoryTubbie {
+  width: 300px;
+  height: 380px;
+  margin: 0px;
+}
+
+.victoryTubbie.Jon {
+  background-image: url("../images/selection_avatars/jon1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.victoryTubbie.Arya {
+  background-image: url("../images/selection_avatars/arya1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.victoryTubbie.Sansa {
+  background-image: url("../images/selection_avatars/sansa1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.victoryTubbie.Cersei {
+  background-image: url("../images/selection_avatars/cersei1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.victoryTubbie.Jaime {
+  background-image: url("../images/selection_avatars/jaime1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.victoryTubbie.Tyrion {
+  background-image: url("../images/selection_avatars/tyrion1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.victoryTubbie.Daenerys {
+  background-image: url("../images/selection_avatars/dany1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.victoryTubbie.Viserys {
+  background-image: url("../images/selection_avatars/viserys1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.victoryTubbie.Oberyn {
+  background-image: url("../images/selection_avatars/oberyn1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.victoryTubbie.Ellaria {
+  background-image: url("../images/selection_avatars/ellaria1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 /* =================================
 Navigation Bar
 ==================================== */
@@ -557,6 +647,11 @@ nav {
 .tealbtn {
   background-color: #1a5b6a;
   color: #e5fdff;
+}
+
+.greenbtn {
+  background-color: #1F553F;
+  color: #ffffff;
 }
 
 .logoimage img {
