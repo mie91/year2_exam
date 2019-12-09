@@ -820,12 +820,12 @@ footer {
   padding: 0px;
   padding-bottom: 20px;
   width: 100%;
-  padding-top: 200px;
+  padding-top: 50px;
 }
 
 .creator {
   font-family: "Antic Slab", serif;
-  color: rgba(112, 40, 73, 0.2);
+  color: rgba(112, 40, 73, 0.5);
 }
 
 .creator:hover {
