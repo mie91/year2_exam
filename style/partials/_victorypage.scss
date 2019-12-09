@@ -1,5 +1,5 @@
 .bodyVictory {
-  @include radial-dark;
+
 }
 
 .victoryBox {
@@ -7,24 +7,37 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
 }
 
-.victoryTubbie, h1 {
-  font-family: $textFont;
-  color: $white;
-  text-shadow: 0px 5px 10px $black;
-  font-size: 4em;
-  margin: 0px;
+.wrapper {
+  h1 {
+    font-family: $headerFont;
+    font-size: 4em;
+    margin: 0;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(112,40,73,1) 30%, rgba(26,91,106,1) 70%, rgba(255,255,255,1) 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 3s linear infinite;
+    display: inline-block;
+  }
 }
 
 .victoryName {
-  text-shadow: 0px 5px 10px $black;
-
+  text-shadow: 0 5px 10px $white;
+  color: $white;
+  margin: 0px;
 }
 
 .victoryTubbie {
-  width: 300px;
-  height: 380px;
+  width: 220px;
+  height: 300px;
   margin: 0px;
 }
 
@@ -69,6 +82,7 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
+
 .victoryTubbie.Viserys {
   background-image: url("../images/selection_avatars/viserys1.png");
   background-repeat: no-repeat;
