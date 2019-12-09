@@ -278,6 +278,73 @@ button:disabled:hover {
   background-size: contain;
 }
 
+.playerTubbie {
+  width: 20vh;
+  height: 30vh;
+  margin: 20px auto 20px;
+}
+
+.playerTubbie.Jon {
+  background-image: url("../images/selection_avatars/jon1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.playerTubbie.Arya {
+  background-image: url("../images/selection_avatars/arya1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.playerTubbie.Sansa {
+  background-image: url("../images/selection_avatars/sansa1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.playerTubbie.Cersei {
+  background-image: url("../images/selection_avatars/cersei1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 1;
+}
+
+.playerTubbie.Jaime {
+  background-image: url("../images/selection_avatars/jaime1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.playerTubbie.Tyrion {
+  background-image: url("../images/selection_avatars/tyrion1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.playerTubbie.Daenerys {
+  background-image: url("../images/selection_avatars/dany1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.playerTubbie.Viserys {
+  background-image: url("../images/selection_avatars/viserys1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.playerTubbie.Oberyn {
+  background-image: url("../images/selection_avatars/oberyn1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.playerTubbie.Ellaria {
+  background-image: url("../images/selection_avatars/ellaria1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 #theDice {
   border-radius: 10%;
   width: 120px;
@@ -301,8 +368,7 @@ button:disabled:hover {
   color: #ffffff;
   box-shadow: 0 0 30px #ffffff;
   text-shadow: 0 0 30px #ffffff;
-  color: #000000;
-  text-shadow: 0px 4px 5px #000000;
+  text-shadow: 0px 4px 10px #ffffff;
   cursor: pointer;
 }
 
@@ -362,7 +428,7 @@ button:disabled:hover {
   box-shadow: 0px 5px 12px 2px rgba(0, 0, 0, 0.75);
   border-radius: 40px;
   border: solid #ffffff 2px;
-  background: linear-gradient(270deg, #000, #702849, #1a5b6a, #000);
+  background: linear-gradient(270deg, #000000, #702849, #1a5b6a, #000000);
   background-size: 9000% 900%;
   -webkit-animation: Gradient 40s ease infinite;
   -moz-animation: Gradient 40s ease infinite;
@@ -398,7 +464,7 @@ button:disabled:hover {
   border-radius: 60px;
   box-shadow: 0px 5px 12px 2px rgba(0, 0, 0, 0.75);
   border: solid #ffffff 2px;
-  background: linear-gradient(-270deg, #000, #702849, #1a5b6a, #000);
+  background: linear-gradient(-270deg, #000000, #702849, #1a5b6a, #000000);
   background-size: 900% 900%;
   -webkit-animation: Gradient 40s ease infinite;
   -moz-animation: Gradient 40s ease infinite;
@@ -483,7 +549,7 @@ nav {
 }
 
 .smallbtn {
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 .tealbtn {

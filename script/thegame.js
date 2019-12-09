@@ -10,6 +10,9 @@ playerDisplay.innerHTML= player;
 let playerToken = document.getElementById("playerToken");
 playerToken.classList.add(player);
 
+let playerTubbie = document.getElementById("playerTubbie");
+playerTubbie.classList.add(player);
+
 p1ScoreDisplay.innerHTML = p1Score;
 
 let theDice = document.getElementById("theDice");
