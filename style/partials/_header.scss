@@ -14,7 +14,7 @@ nav {
 .navlink {
   @include basebutton;
   @include white-pink-btn;
-  font-size: 1.3em;
+  font-size: 1.4em;
 }
 
 .navlink:hover:before {
@@ -23,6 +23,15 @@ nav {
 
 .navlink:hover {
   @include hover-white;
+}
+
+.smallbtn {
+  font-size: 0.9em;
+}
+
+.tealbtn{
+  background-color: $teal;
+  color: $brightteal;
 }
 
 .logoimage img {

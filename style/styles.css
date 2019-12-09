@@ -33,6 +33,39 @@ Buttons
     background-position: top right;
   }
 }
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 /*$black: #000000;
 $white : #ffffff;
 
@@ -64,6 +97,7 @@ Character Selection Avatars
   box-shadow: 0 0 20px #ffffff;
   background-position: 0 0, 0 0;
   transition-duration: 0.7s;
+  cursor: pointer;
 }
 
 .charBox:hover:before {
@@ -245,16 +279,15 @@ button:disabled:hover {
 }
 
 #theDice {
-  background: linear-gradient(to bottom, #bcc6cc, #eee, #bcc6cc);
   border-radius: 10%;
   width: 120px;
   height: 120px;
   text-align: center;
-  text-shadow: 0px 4px 5px #000000;
   transition: all 0.7s ease 0s;
   margin: auto;
   box-shadow: 0px 5px 12px 2px rgba(0, 0, 0, 0.75);
   border: solid #ffffff 2px;
+  color: #ffffff;
 }
 
 #theDice h4 {
@@ -328,6 +361,7 @@ button:disabled:hover {
   padding: 10px;
   box-shadow: 0px 5px 12px 2px rgba(0, 0, 0, 0.75);
   border-radius: 40px;
+  border: solid #ffffff 2px;
   background: linear-gradient(270deg, #000, #702849, #1a5b6a, #000);
   background-size: 9000% 900%;
   -webkit-animation: Gradient 40s ease infinite;
@@ -363,6 +397,7 @@ button:disabled:hover {
   padding: 20px;
   border-radius: 60px;
   box-shadow: 0px 5px 12px 2px rgba(0, 0, 0, 0.75);
+  border: solid #ffffff 2px;
   background: linear-gradient(-270deg, #000, #702849, #1a5b6a, #000);
   background-size: 900% 900%;
   -webkit-animation: Gradient 40s ease infinite;
@@ -370,39 +405,6 @@ button:disabled:hover {
   animation: Gradient 40s ease infinite;
 }
 
-@-webkit-keyframes Gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-@-moz-keyframes Gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-@keyframes Gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
 .square {
   height: 15vh;
   width: 15vh;
@@ -431,7 +433,7 @@ button:disabled:hover {
 }
 
 .tile.start {
-  background: linear-gradient(130deg, #702849 0%, rgba(229, 253, 255, 0.4) 50%, #1a5b6a 100%);
+  background: linear-gradient(130deg, #2D282F, #702849, #1a5b6a, #2D282F);
 }
 
 .tile.finish {
@@ -465,7 +467,7 @@ nav {
   border: solid 2px white;
   background-color: #702849;
   color: #ffdaec;
-  font-size: 1.3em;
+  font-size: 1.4em;
 }
 
 .navlink:hover:before {
@@ -478,6 +480,15 @@ nav {
   color: #ffffff;
   box-shadow: 0 0 30px #ffffff;
   text-shadow: 0 0 30px #ffffff;
+}
+
+.smallbtn {
+  font-size: 0.9em;
+}
+
+.tealbtn {
+  background-color: #1a5b6a;
+  color: #e5fdff;
 }
 
 .logoimage img {
