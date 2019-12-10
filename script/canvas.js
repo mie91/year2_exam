@@ -1,6 +1,5 @@
  /*jshint esversion: 8 */
 
-
  //Get Canvas
  window.onload = function() {
    var canvas = document.getElementById("sky");
@@ -14,7 +13,7 @@
 
 
    //Make snow!
-   var mf = 100; //max flakes
+   var mf = 200; //max flakes
    var flakes = [];
 
    //loop through the empty flakes and apply attributes
@@ -30,7 +29,11 @@
    //draw flakes to the canvas
    function drawFlakes() {
      ctx.clearRect(0, 0, W, H);
-     ctx.fillStyle = "white";
+     var canvasGradient = ctx.createLinearGradient(45, 0, 0, 140);
+     canvasGradient.addColorStop(0.1, "#702849");
+     canvasGradient.addColorStop(0.5, "#ffffff");
+     canvasGradient.addColorStop(1, "#1a5b6a");
+     ctx.fillStyle = canvasGradient;
      ctx.beginPath();
 
      for (var i = 0; i < mf; i++) {
@@ -55,13 +58,13 @@
        var f = flakes[i];
 
        //Update X and Y coordinates of every flake
-       f.y += Math.pow(f.d, 2) + 1;
-       f.x += Math.sin(angle) * 2;
+       f.y += Math.pow(f.d, 1) + 3;
+       f.x += Math.sin(angle) * 0.2;
 
        //if the flake reach the bottom, send new to variatopn
        if (f.y > H) {
          flakes[i] = {
-           x: Math.random()* W,
+           x: Math.random() * W,
            y: 0,
            r: f.r,
            d: f.d
@@ -69,5 +72,5 @@
        }
      }
    }
-setInterval(drawFlakes, 25);
+   setInterval(drawFlakes, 25);
  };

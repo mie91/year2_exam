@@ -541,7 +541,7 @@ button:disabled:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 3s linear infinite;
-  margin: 0px;
+  margin: 0;
 }
 .wrapper h3 {
   background: linear-gradient(90deg, white 0%, #702849 30%, #1a5b6a 70%, white 100%);
@@ -557,23 +557,24 @@ button:disabled:hover {
   font-size: 1.5em;
   color: #fff;
   text-align: center;
-  margin: 0px;
-  margin-bottom: 10px;
+  margin: 0 0 10px;
 }
 
 .victoryName {
   text-shadow: 0 5px 10px #ffffff;
   color: #ffffff;
-  margin: 0px;
+  margin: 0;
 }
 .victoryName h2 {
-  margin: 0px;
+  margin: 0;
+  font-size: 1.2em;
+  letter-spacing: 10px;
 }
 
 .victoryTubbie {
-  width: 220px;
+  width: 250px;
   height: 300px;
-  margin: 0px;
+  margin: 0;
 }
 
 .victoryTubbie.Jon {
@@ -660,8 +661,8 @@ nav {
   transition: all 0.7s ease 0s;
   cursor: pointer;
   border: solid 2px white;
-  background-color: #702849;
-  color: #ffdaec;
+  background-color: #1a5b6a;
+  color: #e5fdff;
   font-size: 1.4em;
 }
 
@@ -684,6 +685,11 @@ nav {
 .tealbtn {
   background-color: #1a5b6a;
   color: #e5fdff;
+}
+
+.pinkbtn {
+  background-color: #702849;
+  color: #ffdaec;
 }
 
 .greenbtn {
@@ -723,7 +729,7 @@ nav {
   border-radius: 20px;
   width: 75%;
   text-align: left;
-  color: #ffdaec;
+  color: #e5fdff;
   font-family: "Antic Slab", serif;
   box-shadow: 0 0 10px #ffffff;
   font-size: 1.1em;
@@ -735,14 +741,14 @@ nav {
 
 .modal-content h1 {
   font-family: "Rock Salt", cursive;
-  color: #ffdaec;
+  color: #e5fdff;
   text-align: center;
   font-size: 2em;
-  background: rgba(112, 40, 73, 0.7);
+  background: rgba(26, 91, 106, 0.7);
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   margin: 0px;
-  border-bottom: solid 2px #ffdaec;
+  border-bottom: solid 2px #e5fdff;
 }
 
 .close {

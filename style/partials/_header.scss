@@ -13,7 +13,7 @@ nav {
 
 .navlink {
   @include basebutton;
-  @include white-pink-btn;
+  @include white-teal-btn;
   font-size: 1.4em;
 }
 
@@ -32,6 +32,11 @@ nav {
 .tealbtn{
   background-color: $teal;
   color: $brightteal;
+}
+
+.pinkbtn{
+  background-color: $pink;
+  color: $brightpink;
 }
 
 .greenbtn {
@@ -71,7 +76,7 @@ nav {
   border-radius: 20px;
   width: 75%;
   text-align: left;
-  color: $brightpink;
+  color: $brightteal;
   font-family: $textFont;
   box-shadow: 0 0 10px $white;
   font-size: 1.1em;
@@ -83,14 +88,14 @@ nav {
 
 .modal-content h1 {
   font-family: $headerFont;
-  color: $brightpink;
+  color: $brightteal;
   text-align: center;
   font-size: 2em;
-  background: rgba($pink, 0.7);
+  background: rgba($teal, 0.7);
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   margin: 0px;
-  border-bottom: solid 2px $brightpink;
+  border-bottom: solid 2px $brightteal;
 }
 
 .close {
