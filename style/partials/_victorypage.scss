@@ -1,9 +1,7 @@
 .bodyVictory {}
 
-#canvas {
+#sky {
   position: absolute;
-  width: 100%;
-  height: 100%;
   z-index: -1;
 }
 
@@ -36,13 +34,13 @@
 .victoryName {
   text-shadow: 0 5px 10px $white;
   color: $white;
-  margin: 0;
+  margin: 0px;
 }
 
 .victoryTubbie {
   width: 220px;
   height: 300px;
-  margin: 0;
+  margin: 0px;
 }
 
 .victoryTubbie.Jon {
