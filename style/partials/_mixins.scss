@@ -45,6 +45,18 @@ Buttons
   filter: blur(5px);
 }
 
+@mixin gradient-text {
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(112,40,73,1) 30%, rgba(26,91,106,1) 70%, rgba(255,255,255,1) 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s linear infinite;
+}
+
 @mixin pink-gradient {
   background: linear-gradient(60deg, rgba($pink, 1) 0%, rgba($brightpink, 1) 50%, rgba($pink,1) 100%);
 }

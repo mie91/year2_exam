@@ -13,21 +13,24 @@
 }
 
 .wrapper {
+
   h1 {
+    text-align: center;
     font-family: $headerFont;
-    font-size: 4em;
-    margin: 0;
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(112,40,73,1) 30%, rgba(26,91,106,1) 70%, rgba(255,255,255,1) 100%);
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
+    font-size: 3.5em;
     color: #fff;
-    background-clip: text;
-    text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 3s linear infinite;
-    display: inline-block;
+    @include gradient-text;
+    margin: 0px;
+  }
+
+  h3 {
+    @include gradient-text;
+    font-family: $textFont;
+    font-size: 1.5em;
+    color: #fff;
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 10px;
   }
 }
 
@@ -35,7 +38,12 @@
   text-shadow: 0 5px 10px $white;
   color: $white;
   margin: 0px;
+  h2 {
+    margin: 0px;
+  }
 }
+
+
 
 .victoryTubbie {
   width: 220px;

@@ -528,25 +528,45 @@ button:disabled:hover {
 }
 
 .wrapper h1 {
+  text-align: center;
   font-family: "Rock Salt", cursive;
-  font-size: 4em;
-  margin: 0;
+  font-size: 3.5em;
+  color: #fff;
   background: linear-gradient(90deg, white 0%, #702849 30%, #1a5b6a 70%, white 100%);
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
-  color: #fff;
   background-clip: text;
   text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 3s linear infinite;
-  display: inline-block;
+  margin: 0px;
+}
+.wrapper h3 {
+  background: linear-gradient(90deg, white 0%, #702849 30%, #1a5b6a 70%, white 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s linear infinite;
+  font-family: "Antic Slab", serif;
+  font-size: 1.5em;
+  color: #fff;
+  text-align: center;
+  margin: 0px;
+  margin-bottom: 10px;
 }
 
 .victoryName {
   text-shadow: 0 5px 10px #ffffff;
   color: #ffffff;
+  margin: 0px;
+}
+.victoryName h2 {
   margin: 0px;
 }
 
