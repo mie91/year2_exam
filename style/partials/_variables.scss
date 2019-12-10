@@ -1,9 +1,8 @@
-
-
-
+/* =================================
+Colors
+==================================== */
 $black: #000000;
-$white : #ffffff;
-
+$white: #ffffff;
 $darkgray: #2D282F;
 $pink: #702849;
 $teal: #1a5b6a;
@@ -12,18 +11,20 @@ $brightpink: #ffdaec;
 $green: #3ca77b;
 $darkgreen: #1F553F;
 
-
-
+/* =================================
+Fonts
+==================================== */
 $headerFont: "Rock Salt", cursive;
-$textFont: "Antic Slab", serif;
+$textFont: "Antic Slab", serif; /*
 
-$headerFont2: "Pacifico", cursive;
-$textFont2: "Josefin Sans", serif;
+=================================
+Misc.
+==================================== */
+$whiteBorder: solid 2px white; /*
 
-$whiteBorder: solid 2px white;
-
-
-
+=================================
+Old Color Theme
+==================================== */
 /*$black: #000000;
 $white : #ffffff;
 

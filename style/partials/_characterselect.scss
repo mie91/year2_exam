@@ -1,20 +1,17 @@
 /* =================================
 Character Selection Avatars
 ==================================== */
-
 .charBox {
   border-radius: 50px;
-	padding: 50px;
-  padding-bottom: 20px;
-	margin: 5px;
+  padding: 50px 50px 20px;
+  margin: 5px;
   @include pink-gradient-2;
   //@include pinkshine;
   max-width: 250px;
 }
 
 .charBox:nth-child(odd) {
- @include teal-gradient-2;
-// @include tealshine;
+  @include teal-gradient-2; // @include tealshine;
 }
 
 .charBox:hover {
@@ -32,7 +29,7 @@ Character Selection Avatars
 .charinfo {
   text-align: center;
   border-radius: 20px;
-  margin-top:50px;
+  margin-top: 50px;
   background-color: rgba($darkgray, 0.7);
 }
 
@@ -40,35 +37,30 @@ Character Selection Avatars
   padding: 7px;
   font-size: 1.4em;
   font-family: $textFont;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   color: $white;
 }
 
-.charBox.theChosen {
-
-
-}
+.charBox.theChosen {}
 
 .tubbie {
-	max-width: 150px;
+  max-width: 150px;
   transition: all 0.5s;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 .tubbie:hover {
   transform: scale(1.4);
-
 }
-
 /* =================================
 Other
 ==================================== */
+
 .characterSelectInfo {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .header {
@@ -77,10 +69,9 @@ Other
   letter-spacing: 5px;
   color: $brightteal;
   font-size: 1.1em;
-  text-shadow: 0px 5px 15px $teal;
+  text-shadow: 0 5px 15px $teal;
   margin-right: 50px;
 }
-
 
 .selection-container {
   text-align: center;
@@ -89,7 +80,7 @@ Other
   color: $brightteal;
   font-size: 2em;
   margin-bottom: 5px;
-  text-shadow: 0px 5px 15px $teal;
+  text-shadow: 0 5px 15px $teal;
 }
 
 .startGame {
@@ -107,24 +98,33 @@ Other
   @include hover-white;
 }
 
-button:disabled{
+button:disabled {
   border: 2px solid $white;
   background-color: #cccccc;
   color: $darkgray;
 }
 
-button:disabled:hover{
+button:disabled:hover {
   box-shadow: none;
   color: $darkgray;
   cursor: not-allowed;
 }
 
-.theChosen.charBox{
-    box-shadow: 0px 5px 50px $black;
-    transform: scale(1.1);
-    background-color: $white;
+.theChosen.charBox {
+  box-shadow: 0 5px 50px $black;
+  transform: scale(1.1);
+  background-color: $white;
 }
 
-.theChosen img{
-    transform: scale(1.4);
+.theChosen img {
+  transform: scale(1.4);
 }
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media only screen and (max-width: 900px) {}
+@media only screen and (max-width: 769px) {}
+@media only screen and (max-width: 425px) {}
+@media only screen and (max-width: 375px) {}

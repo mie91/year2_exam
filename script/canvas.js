@@ -13,7 +13,7 @@
 
 
    //Make snow!
-   var mf = 200; //max flakes
+   var mf = 150; //max flakes
    var flakes = [];
 
    //loop through the empty flakes and apply attributes
@@ -21,8 +21,8 @@
      flakes.push({
        x: Math.random() * W,
        y: Math.random() * H,
-       r: Math.random() * 5 + 2, //size variatopn of flakes, 2-7px
-       d: Math.random() + 1 //flake density
+       r: Math.random() * 7 + 2, //size variatopn of flakes, 2-7px
+       d: Math.random() + 0.5 //flake density
      });
    }
 

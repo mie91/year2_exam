@@ -1,3 +1,7 @@
+/* =================================
+  General
+==================================== */
+
 .bodyVictory {}
 
 #sky {
@@ -21,28 +25,23 @@
     @include gradient-text;
     margin: 0;
   }
-
-  h3 {
-    @include gradient-text;
-    font-family: $textFont;
-    font-size: 1.5em;
-    color: #fff;
-    text-align: center;
-    margin: 0 0 10px;
-  }
 }
 
 .victoryName {
-  text-shadow: 0 5px 10px $white;
+  text-shadow: none;
   color: $white;
   margin: 0;
 
   h2 {
     margin: 0;
-    font-size: 1.2em;
+    font-size: 2em;
     letter-spacing: 10px;
+    @include gradient-text;
   }
 }
+/* =================================
+  Victory Tubbie Tokens
+==================================== */
 
 .victoryTubbie {
   width: 250px;
@@ -109,3 +108,10 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
+/* =================================
+  Media Queries
+==================================== */
+@media only screen and (max-width: 900px) {}
+@media only screen and (max-width: 769px) {}
+@media only screen and (max-width: 425px) {}
+@media only screen and (max-width: 375px) {}

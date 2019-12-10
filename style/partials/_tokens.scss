@@ -1,9 +1,10 @@
-
+/* =================================
+Board Token
+==================================== */
 .playerToken {
   width: 120px;
   height: 120px;
   margin-left: 50%;
-
 }
 
 .playerToken.Jon {
@@ -47,6 +48,7 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
+
 .playerToken.Viserys {
   background-image: url("../images/selection_avatars/viserys1.png");
   background-repeat: no-repeat;
@@ -64,15 +66,13 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
-
-
-
-
-
+/* =================================
+Token - LEFT SIDE
+==================================== */
 .playerTubbie {
   width: 200px;
   height: 250px;
-  margin: 20px auto 0px;
+  margin: 20px auto 0;
 }
 
 .playerTubbie.Jon {
@@ -116,6 +116,7 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
+
 .playerTubbie.Viserys {
   background-image: url("../images/selection_avatars/viserys1.png");
   background-repeat: no-repeat;
@@ -133,3 +134,10 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
+/* =================================
+  Media Queries
+==================================== */
+@media only screen and (max-width: 900px) {}
+@media only screen and (max-width: 769px) {}
+@media only screen and (max-width: 425px) {}
+@media only screen and (max-width: 375px) {}

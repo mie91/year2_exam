@@ -1,0 +1,78 @@
+/* =================================
+  MODAL - How to Play
+==================================== */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0, 0.5);
+}
+
+.modalBox {
+  text-align: center;
+}
+
+.modal-content {
+  background-color: $darkgray;
+  margin: 10% auto;
+  border: $whiteBorder;
+  border-radius: 20px;
+  width: 75%;
+  text-align: left;
+  color: $brightteal;
+  font-family: $textFont;
+  box-shadow: 0 0 10px $white;
+  font-size: 1.1em;
+}
+
+.modal-content p {
+  padding: 20px;
+}
+
+.modal-content h1 {
+  font-family: $headerFont;
+  color: $brightteal;
+  text-align: center;
+  font-size: 2em;
+  background: rgba($teal, 0.7);
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  margin: 0;
+  border-bottom: solid 2px $brightteal;
+}
+
+.close {
+  padding: 10px;
+  text-align: center;
+}
+
+.confirmHelp {
+  @include basebutton;
+  @include white-teal-btn;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.confirmHelp:hover {
+  @include hover-white;
+}
+/* =================================
+  Media Queries
+==================================== */
+@media only screen and (max-width: 900px) {}
+@media only screen and (max-width: 769px) {
+  .modalBox {
+    text-align: center;
+    margin-left: auto;
+    font-size: 0.7em;
+  }
+}
+@media only screen and (max-width: 425px) {}
+@media only screen and (max-width: 375px) {}

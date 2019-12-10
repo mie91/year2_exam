@@ -1,8 +1,6 @@
-
 /* =================================
 Buttons
 ==================================== */
-
 @mixin basebutton {
   font-family: $textFont;
   letter-spacing: 0.2em;
@@ -14,39 +12,36 @@ Buttons
   transition: all 0.7s ease 0s;
   cursor: pointer;
 }
-
 @mixin white-pink-btn {
-   border: $whiteBorder;
-   background-color: $pink;
-   color: $brightpink;
+  border: $whiteBorder;
+  background-color: $pink;
+  color: $brightpink;
 }
-
 @mixin white-gray-btn {
-   border: $whiteBorder;
-   background-color: $darkgray;
-   color: $white;
+  border: $whiteBorder;
+  background-color: $darkgray;
+  color: $white;
 }
-
 @mixin white-teal-btn {
-   border: $whiteBorder;
-   background-color: $teal;
-   color: $brightteal;
+  border: $whiteBorder;
+  background-color: $teal;
+  color: $brightteal;
 }
-
 @mixin hover-white {
   color: $white;
   box-shadow: 0 0 30px $white;
   text-shadow: 0 0 30px $white;
 }
-
 @mixin hover-white-before {
   transform: scale(1.5);
   box-shadow: 0 0 15px $white;
   filter: blur(5px);
 }
-
+/* =================================
+Gradient Text
+==================================== */
 @mixin gradient-text {
-  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(112,40,73,1) 30%, rgba(26,91,106,1) 70%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(112,40,73,1) 30%, rgba(26,91,106,1) 50%, rgba(255,255,255,1) 100%);
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
@@ -56,119 +51,44 @@ Buttons
   -webkit-text-fill-color: transparent;
   animation: textclip 3s linear infinite;
 }
-
+/* =================================
+Gradient Backgrounds
+==================================== */
 @mixin pink-gradient {
   background: linear-gradient(60deg, rgba($pink, 1) 0%, rgba($brightpink, 1) 50%, rgba($pink,1) 100%);
 }
-
 @mixin pink-gradient-2 {
   background: linear-gradient(0deg, rgba(207,157,177,1) 0%, rgba(112,40,73,1) 100%);
 }
-
 @mixin teal-gradient {
   background: linear-gradient(60deg, rgba($teal, 1) 0%, rgba($brightteal, 1) 50%, rgba($teal, 1) 100%);
 }
-
-@mixin teal-gradient-2{
+@mixin teal-gradient-2 {
   background: linear-gradient(0deg, rgba(131,176,186,1) 0%, rgba(26,91,106,1) 100%);
 }
-
 @mixin pink-teal-gradient-1 {
   background: linear-gradient(164deg, rgba(112,40,73,1) 0%, rgba(26,91,106,1) 48%, rgba(112,40,73,1) 100%);
 }
-
 @mixin pink-teal-gradient-2 {
   background: linear-gradient(164deg, rgba(26,91,106,1) 0%, rgba(112,40,73,1) 50%, rgba(26,91,106,1) 100%);
 }
-
 @mixin radial-dark {
   background: radial-gradient(circle, rgba(179,179,179,1) 0%, rgba(45,40,47,1) 15%, rgba(0,0,0,1) 40%);
 }
-
-
-
+/* =================================
+Effects and hovering
+==================================== */
 @mixin tealshine {
   background-position: -180px -180px, 0 0;
-  background-image: -webkit-linear-gradient(
-    top left,
-    rgba($teal, 0.8) 39%,
-    rgba($white, 0.9) 45%,
-    rgba($teal, 0.8) 50%,
-  );
-   background-size: 250% 250%, 100% 100%;
+  background-image: -webkit-linear-gradient(top left, rgba($teal, 0.8) 39%, rgba($white, 0.9) 45%, rgba($teal, 0.8) 50%,);
+  background-size: 250% 250%, 100% 100%;
 }
-
-
 @mixin pinkshine {
   background-position: -180px -180px, 0 0;
-  background-image: -webkit-linear-gradient(
-    top left,
-    rgba($pink, 0.8) 39%,
-    rgba($white, 0.9) 45%,
-    rgba($pink, 0.8) 50%,
-  );
-   background-size: 250% 250%, 100% 100%;
+  background-image: -webkit-linear-gradient(top left, rgba($pink, 0.8) 39%, rgba($white, 0.9) 45%, rgba($pink, 0.8) 50%,);
+  background-size: 250% 250%, 100% 100%;
 }
-
 @mixin shine-hover {
   background-position: 0 0, 0 0;
-         transition-duration: 0.7s;
-}
-
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes shake {
-  10%, 90% {
-    transform: translate3d(-5px, 0, 0);
-  }
-  20%, 80% {
-    transform: translate3d(4px, 0, 0);
-  }
-  30%, 50%, 70% {
-    transform: translate3d(-3px, 0, 0);
-  }
-  40%, 60% {
-    transform: translate3d(6px, 0, 0);
-  }
-}
-
-@keyframes shimmer {
-  0% {
-    background-position: top left;
-  }
-  100% {
-    background-position: top right;
-  }
-}
-
-
-
-@-webkit-keyframes Gradient {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
-@-moz-keyframes Gradient {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
-@keyframes Gradient {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
-
-@keyframes textclip {
-	to {
-		background-position: 200% center;
-	}
+  transition-duration: 0.7s;
 }

@@ -7,16 +7,19 @@
 @import url('https://fonts.googleapis.com/css?family=Antic+Slab|Rock+Salt&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Pacifico&display=swap');
 
-@import "./partials/blocktags";
+
 @import "./partials/mixins";
+@import "./partials/keyframes";
 @import "./partials/variables";
 
 @import "./partials/characterselect";
+@import "./partials/howtoplaymodal";
 @import "./partials/tokens";
 @import "./partials/dice";
 @import "./partials/thegame";
 @import "./partials/victorypage";
 
 @import "./partials/header";
+@import "./partials/blocktags";
 @import "./partials/body";
 @import "./partials/footer";

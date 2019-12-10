@@ -1,3 +1,6 @@
+/* =================================
+  The Dice - General
+==================================== */
 #theDice {
   //background:linear-gradient( to bottom, #bcc6cc, #eee, #bcc6cc);
   border-radius: 10%;
@@ -6,7 +9,7 @@
   text-align: center;
   transition: all 0.7s ease 0s;
   margin: auto;
-  box-shadow: 0px 5px 12px 2px rgba($black, 0.75);
+  box-shadow: 0 5px 12px 2px rgba($black, 0.75);
   border: solid $white 2px;
   color: $white;
   margin-top: 50px;
@@ -22,7 +25,7 @@
 #theDice:hover {
   animation: shake 1s cubic-bezier(.36,.07,.19,.97) infinite;
   @include hover-white;
-  text-shadow: 0px 4px 10px $white;
+  text-shadow: 0 4px 10px $white;
   cursor: pointer;
 }
 
@@ -38,37 +41,48 @@
   text-align: center;
   margin: auto;
 }
-
+/* =================================
+  Dice Images
+==================================== */
 #theDice.theDice1 {
   background-image: url("../images/dice/one.png");
   background-repeat: no-repeat;
   background-size: contain;
-
 }
+
 #theDice.theDice2 {
   background-image: url("../images/dice/two.png");
   background-repeat: no-repeat;
   background-size: contain;
-
 }
+
 #theDice.theDice3 {
   background-image: url("../images/dice/three.png");
   background-repeat: no-repeat;
   background-size: contain;
-
 }
+
 #theDice.theDice4 {
   background-image: url("../images/dice/four.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
+
 #theDice.theDice5 {
   background-image: url("../images/dice/five.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
+
 #theDice.theDice6 {
   background-image: url("../images/dice/six.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
+/* =================================
+  Media Queries
+==================================== */
+@media only screen and (max-width: 900px) {}
+@media only screen and (max-width: 769px) {}
+@media only screen and (max-width: 425px) {}
+@media only screen and (max-width: 375px) {}

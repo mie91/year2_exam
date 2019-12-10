@@ -3,6 +3,18 @@
 /* =================================
 Buttons
 ==================================== */
+/* =================================
+Gradient Text
+==================================== */
+/* =================================
+Gradient Backgrounds
+==================================== */
+/* =================================
+Effects and hovering
+==================================== */
+/* =================================
+Keyframe - Spin
+==================================== */
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -11,6 +23,9 @@ Buttons
     transform: rotate(360deg);
   }
 }
+/* =================================
+Keyframe - Shake
+==================================== */
 @keyframes shake {
   10%, 90% {
     transform: translate3d(-5px, 0, 0);
@@ -25,6 +40,9 @@ Buttons
     transform: translate3d(6px, 0, 0);
   }
 }
+/* =================================
+Keyframe - Shimmer
+==================================== */
 @keyframes shimmer {
   0% {
     background-position: top left;
@@ -33,37 +51,40 @@ Buttons
     background-position: top right;
   }
 }
+/* =================================
+Keyframe - Gradient
+==================================== */
 @-webkit-keyframes Gradient {
   0% {
-    background-position: 0% 50%;
+    background-position: 0 50%;
   }
   50% {
     background-position: 100% 50%;
   }
   100% {
-    background-position: 0% 50%;
+    background-position: 0 50%;
   }
 }
 @-moz-keyframes Gradient {
   0% {
-    background-position: 0% 50%;
+    background-position: 0 50%;
   }
   50% {
     background-position: 100% 50%;
   }
   100% {
-    background-position: 0% 50%;
+    background-position: 0 50%;
   }
 }
 @keyframes Gradient {
   0% {
-    background-position: 0% 50%;
+    background-position: 0 50%;
   }
   50% {
     background-position: 100% 50%;
   }
   100% {
-    background-position: 0% 50%;
+    background-position: 0 50%;
   }
 }
 @keyframes textclip {
@@ -71,6 +92,22 @@ Buttons
     background-position: 200% center;
   }
 }
+/* =================================
+Colors
+==================================== */
+/* =================================
+Fonts
+==================================== */
+/*
+
+=================================
+Misc.
+==================================== */
+/*
+
+=================================
+Old Color Theme
+==================================== */
 /*$black: #000000;
 $white : #ffffff;
 
@@ -84,8 +121,7 @@ Character Selection Avatars
 ==================================== */
 .charBox {
   border-radius: 50px;
-  padding: 50px;
-  padding-bottom: 20px;
+  padding: 50px 50px 20px;
   margin: 5px;
   background: linear-gradient(0deg, #cf9db1 0%, #702849 100%);
   max-width: 250px;
@@ -123,15 +159,15 @@ Character Selection Avatars
   padding: 7px;
   font-size: 1.4em;
   font-family: "Antic Slab", serif;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   color: #ffffff;
 }
 
 .tubbie {
   max-width: 150px;
   transition: all 0.5s;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 .tubbie:hover {
@@ -153,7 +189,7 @@ Other
   letter-spacing: 5px;
   color: #e5fdff;
   font-size: 1.1em;
-  text-shadow: 0px 5px 15px #1a5b6a;
+  text-shadow: 0 5px 15px #1a5b6a;
   margin-right: 50px;
 }
 
@@ -164,7 +200,7 @@ Other
   color: #e5fdff;
   font-size: 2em;
   margin-bottom: 5px;
-  text-shadow: 0px 5px 15px #1a5b6a;
+  text-shadow: 0 5px 15px #1a5b6a;
 }
 
 .startGame {
@@ -209,7 +245,7 @@ button:disabled:hover {
 }
 
 .theChosen.charBox {
-  box-shadow: 0px 5px 50px #000000;
+  box-shadow: 0 5px 50px #000000;
   transform: scale(1.1);
   background-color: #ffffff;
 }
@@ -218,6 +254,99 @@ button:disabled:hover {
   transform: scale(1.4);
 }
 
+/* =================================
+  Media Queries
+==================================== */
+/* =================================
+  MODAL - How to Play
+==================================== */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modalBox {
+  text-align: center;
+}
+
+.modal-content {
+  background-color: #2D282F;
+  margin: 10% auto;
+  border: solid 2px white;
+  border-radius: 20px;
+  width: 75%;
+  text-align: left;
+  color: #e5fdff;
+  font-family: "Antic Slab", serif;
+  box-shadow: 0 0 10px #ffffff;
+  font-size: 1.1em;
+}
+
+.modal-content p {
+  padding: 20px;
+}
+
+.modal-content h1 {
+  font-family: "Rock Salt", cursive;
+  color: #e5fdff;
+  text-align: center;
+  font-size: 2em;
+  background: rgba(26, 91, 106, 0.7);
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  margin: 0;
+  border-bottom: solid 2px #e5fdff;
+}
+
+.close {
+  padding: 10px;
+  text-align: center;
+}
+
+.confirmHelp {
+  font-family: "Antic Slab", serif;
+  letter-spacing: 0.2em;
+  margin: 10px;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 50px;
+  text-align: center;
+  transition: all 0.7s ease 0s;
+  cursor: pointer;
+  border: solid 2px white;
+  background-color: #1a5b6a;
+  color: #e5fdff;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.confirmHelp:hover {
+  color: #ffffff;
+  box-shadow: 0 0 30px #ffffff;
+  text-shadow: 0 0 30px #ffffff;
+}
+
+/* =================================
+  Media Queries
+==================================== */
+@media only screen and (max-width: 769px) {
+  .modalBox {
+    text-align: center;
+    margin-left: auto;
+    font-size: 0.7em;
+  }
+}
+/* =================================
+Board Token
+==================================== */
 .playerToken {
   width: 120px;
   height: 120px;
@@ -284,10 +413,13 @@ button:disabled:hover {
   background-size: contain;
 }
 
+/* =================================
+Token - LEFT SIDE
+==================================== */
 .playerTubbie {
   width: 200px;
   height: 250px;
-  margin: 20px auto 0px;
+  margin: 20px auto 0;
 }
 
 .playerTubbie.Jon {
@@ -350,6 +482,12 @@ button:disabled:hover {
   background-size: contain;
 }
 
+/* =================================
+  Media Queries
+==================================== */
+/* =================================
+  The Dice - General
+==================================== */
 #theDice {
   border-radius: 10%;
   width: 120px;
@@ -357,7 +495,7 @@ button:disabled:hover {
   text-align: center;
   transition: all 0.7s ease 0s;
   margin: auto;
-  box-shadow: 0px 5px 12px 2px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 5px 12px 2px rgba(0, 0, 0, 0.75);
   border: solid #ffffff 2px;
   color: #ffffff;
   margin-top: 50px;
@@ -375,7 +513,7 @@ button:disabled:hover {
   color: #ffffff;
   box-shadow: 0 0 30px #ffffff;
   text-shadow: 0 0 30px #ffffff;
-  text-shadow: 0px 4px 10px #ffffff;
+  text-shadow: 0 4px 10px #ffffff;
   cursor: pointer;
 }
 
@@ -392,6 +530,9 @@ button:disabled:hover {
   margin: auto;
 }
 
+/* =================================
+  Dice Images
+==================================== */
 #theDice.theDice1 {
   background-image: url("../images/dice/one.png");
   background-repeat: no-repeat;
@@ -428,12 +569,17 @@ button:disabled:hover {
   background-size: contain;
 }
 
+/* =================================
+  Media Queries
+==================================== */
+/* =================================
+General
+==================================== */
 .dice-score-holder {
   float: left;
-  margin: 10px;
-  margin-right: 30px;
+  margin: 10px 30px 10px 10px;
   padding: 20px;
-  box-shadow: 0px 5px 12px 2px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 5px 12px 2px rgba(0, 0, 0, 0.75);
   border-radius: 40px;
   border: solid #ffffff 2px;
   background: linear-gradient(270deg, #000000, #702849, #1a5b6a, #000000);
@@ -443,20 +589,24 @@ button:disabled:hover {
   animation: Gradient 40s ease infinite;
 }
 
-.character-display, #player {
+#player,
+.character-display {
   font-size: 2em;
   font-family: "Antic Slab", serif;
   color: #e5fdff;
-  text-shadow: 0px 5px 10px #702849;
+  text-shadow: 0 5px 10px #702849;
   margin: auto;
 }
 
 #player {
   margin-bottom: 15px;
   font-family: "Rock Salt", cursive;
-  text-shadow: 0px 5px 15px #1a5b6a;
+  text-shadow: 0 5px 15px #1a5b6a;
 }
 
+/* =================================
+The board
+==================================== */
 .board {
   margin-top: 5px;
   position: relative;
@@ -470,7 +620,7 @@ button:disabled:hover {
   margin: auto;
   padding: 20px;
   border-radius: 60px;
-  box-shadow: 0px 5px 12px 2px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 5px 12px 2px rgba(0, 0, 0, 0.75);
   border: solid #ffffff 2px;
   background: linear-gradient(-270deg, #000000, #702849, #1a5b6a, #000000);
   background-size: 900% 900%;
@@ -496,7 +646,7 @@ button:disabled:hover {
   color: #ffffff;
   font-family: "Rock Salt", cursive;
   font-size: 1.2em;
-  box-shadow: 0px 5px 12px 2px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 5px 12px 2px rgba(0, 0, 0, 0.75);
 }
 
 .tile:nth-child(even) {
@@ -515,6 +665,12 @@ button:disabled:hover {
   background: linear-gradient(130deg, #1f553f 0%, #3ca77b 50%, #1f553f 100%);
 }
 
+/* =================================
+Media Queries
+==================================== */
+/* =================================
+  General
+==================================== */
 #sky {
   position: absolute;
   z-index: -1;
@@ -532,7 +688,7 @@ button:disabled:hover {
   font-family: "Rock Salt", cursive;
   font-size: 3.5em;
   color: #fff;
-  background: linear-gradient(90deg, white 0%, #702849 30%, #1a5b6a 70%, white 100%);
+  background: linear-gradient(90deg, white 0%, #702849 30%, #1a5b6a 50%, white 100%);
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
@@ -543,34 +699,30 @@ button:disabled:hover {
   animation: textclip 3s linear infinite;
   margin: 0;
 }
-.wrapper h3 {
-  background: linear-gradient(90deg, white 0%, #702849 30%, #1a5b6a 70%, white 100%);
-  background-size: auto auto;
-  background-clip: border-box;
-  background-size: 200% auto;
-  background-clip: text;
-  text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 3s linear infinite;
-  font-family: "Antic Slab", serif;
-  font-size: 1.5em;
-  color: #fff;
-  text-align: center;
-  margin: 0 0 10px;
-}
 
 .victoryName {
-  text-shadow: 0 5px 10px #ffffff;
+  text-shadow: none;
   color: #ffffff;
   margin: 0;
 }
 .victoryName h2 {
   margin: 0;
-  font-size: 1.2em;
+  font-size: 2em;
   letter-spacing: 10px;
+  background: linear-gradient(90deg, white 0%, #702849 30%, #1a5b6a 50%, white 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s linear infinite;
 }
 
+/* =================================
+  Victory Tubbie Tokens
+==================================== */
 .victoryTubbie {
   width: 250px;
   height: 300px;
@@ -638,6 +790,9 @@ button:disabled:hover {
 }
 
 /* =================================
+  Media Queries
+==================================== */
+/* =================================
 Navigation Bar
 ==================================== */
 header {
@@ -678,106 +833,10 @@ nav {
   text-shadow: 0 0 30px #ffffff;
 }
 
-.smallbtn {
-  font-size: 1em;
-}
-
-.tealbtn {
-  background-color: #1a5b6a;
-  color: #e5fdff;
-}
-
-.pinkbtn {
-  background-color: #702849;
-  color: #ffdaec;
-}
-
-.greenbtn {
-  background-color: #1F553F;
-  color: #ffffff;
-}
-
 .logoimage img {
   max-width: 200px;
   margin-bottom: 10px;
   margin-top: 5px;
-}
-
-/* =================================
-  MODAL
-==================================== */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.modalBox {
-  text-align: center;
-}
-
-.modal-content {
-  background-color: #2D282F;
-  margin: 10% auto;
-  border: solid 2px white;
-  border-radius: 20px;
-  width: 75%;
-  text-align: left;
-  color: #e5fdff;
-  font-family: "Antic Slab", serif;
-  box-shadow: 0 0 10px #ffffff;
-  font-size: 1.1em;
-}
-
-.modal-content p {
-  padding: 20px;
-}
-
-.modal-content h1 {
-  font-family: "Rock Salt", cursive;
-  color: #e5fdff;
-  text-align: center;
-  font-size: 2em;
-  background: rgba(26, 91, 106, 0.7);
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-  margin: 0px;
-  border-bottom: solid 2px #e5fdff;
-}
-
-.close {
-  padding: 10px;
-  text-align: center;
-}
-
-.confirmHelp {
-  font-family: "Antic Slab", serif;
-  letter-spacing: 0.2em;
-  margin: 10px;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 50px;
-  text-align: center;
-  transition: all 0.7s ease 0s;
-  cursor: pointer;
-  border: solid 2px white;
-  background-color: #1a5b6a;
-  color: #e5fdff;
-  font-size: 1.2em;
-  cursor: pointer;
-  margin-top: 5px;
-}
-
-.confirmHelp:hover {
-  color: #ffffff;
-  box-shadow: 0 0 30px #ffffff;
-  text-shadow: 0 0 30px #ffffff;
 }
 
 /* =================================
@@ -815,6 +874,28 @@ nav {
   }
 }
 /* =================================
+  Button Variations
+==================================== */
+.smallbtn {
+  font-size: 1em;
+}
+
+.tealbtn {
+  background-color: #1a5b6a;
+  color: #e5fdff;
+}
+
+.pinkbtn {
+  background-color: #702849;
+  color: #ffdaec;
+}
+
+.greenbtn {
+  background-color: #1F553F;
+  color: #ffffff;
+}
+
+/* =================================
 Body, Global
 ==================================== */
 * {
@@ -823,7 +904,7 @@ Body, Global
 
 .container {
   display: flex;
-  margin: 0px 0px;
+  margin: 0;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -846,10 +927,12 @@ body {
     flex-direction: row;
   }
 }
+/* =================================
+  General
+==================================== */
 footer {
   text-align: center;
-  padding: 0px;
-  padding-bottom: 20px;
+  padding: 0 0 20px;
   width: 100%;
   padding-top: 50px;
 }

@@ -1,16 +1,14 @@
-
+/* =================================
+General
+==================================== */
 
 .dice-score-holder {
   float: left;
-  margin: 10px;
-  margin-right: 30px;
+  margin: 10px 30px 10px 10px;
   padding: 20px;
-
-  box-shadow: 0px 5px 12px 2px rgba($black, 0.75);
+  box-shadow: 0 5px 12px 2px rgba($black, 0.75);
   border-radius: 40px;
   border: solid $white 2px;
-
-
   background: linear-gradient(270deg, $black, $pink, $teal, $black);
   background-size: 9000% 900%;
   -webkit-animation: Gradient 40s ease infinite;
@@ -18,19 +16,23 @@
   animation: Gradient 40s ease infinite;
 }
 
-.character-display, #player {
+#player,
+.character-display {
   font-size: 2em;
   font-family: $textFont;
   color: $brightteal;
-  text-shadow: 0px 5px 10px $pink;
+  text-shadow: 0 5px 10px $pink;
   margin: auto;
 }
 
 #player {
   margin-bottom: 15px;
   font-family: $headerFont;
-  text-shadow: 0px 5px 15px $teal;
+  text-shadow: 0 5px 15px $teal;
 }
+/* =================================
+The board
+==================================== */
 
 .board {
   margin-top: 5px;
@@ -41,20 +43,17 @@
   display: flex;
   justify-content: center;
   max-width: 900px;
-
   flex-wrap: wrap;
-
   margin: auto;
   padding: 20px;
   border-radius: 60px;
-  box-shadow: 0px 5px 12px 2px rgba($black, 0.75);
+  box-shadow: 0 5px 12px 2px rgba($black, 0.75);
   border: solid $white 2px;
-
   background: linear-gradient(-270deg, $black, $pink, $teal, $black);
-	background-size: 900% 900%;
-	-webkit-animation: Gradient 40s ease infinite;
-	-moz-animation: Gradient 40s ease infinite;
-	animation: Gradient 40s ease infinite;
+  background-size: 900% 900%;
+  -webkit-animation: Gradient 40s ease infinite;
+  -moz-animation: Gradient 40s ease infinite;
+  animation: Gradient 40s ease infinite;
 }
 
 .square {
@@ -74,32 +73,30 @@
   color: $white;
   font-family: $headerFont;
   font-size: 1.2em;
-  box-shadow: 0px 5px 12px 2px rgba($black, 0.75);
-
-
+  box-shadow: 0 5px 12px 2px rgba($black, 0.75);
 }
-
-
 
 .tile:nth-child(even) {
   background: rgba($black, 0.2);
-  background-position:top left;
-  background-repeat:repeat;
-  background-attachment:fixed;
-
-
+  background-position: top left;
+  background-repeat: repeat;
+  background-attachment: fixed;
 }
 
 .tile.start {
-
   background: linear-gradient(130deg, $darkgray, $pink, $teal, $darkgray);
-
 }
-
-
 
 .tile.finish {
-
   border: 2px solid $green;
-  background:linear-gradient(130deg, rgba($darkgreen, 1) 0%, rgba($green, 1) 50%, rgba($darkgreen, 1) 100%);
+  background: linear-gradient(130deg, rgba($darkgreen, 1) 0%, rgba($green, 1) 50%, rgba($darkgreen, 1) 100%);
 }
+
+
+/* =================================
+Media Queries
+==================================== */
+@media only screen and (max-width: 900px) {}
+@media only screen and (max-width: 769px) {}
+@media only screen and (max-width: 425px) {}
+@media only screen and (max-width: 375px) {}
