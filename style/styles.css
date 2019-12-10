@@ -515,6 +515,13 @@ button:disabled:hover {
   background: linear-gradient(130deg, #1f553f 0%, #3ca77b 50%, #1f553f 100%);
 }
 
+#canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
 .victoryBox {
   display: flex;
   justify-content: center;
@@ -542,13 +549,13 @@ button:disabled:hover {
 .victoryName {
   text-shadow: 0 5px 10px #ffffff;
   color: #ffffff;
-  margin: 0px;
+  margin: 0;
 }
 
 .victoryTubbie {
   width: 220px;
   height: 300px;
-  margin: 0px;
+  margin: 0;
 }
 
 .victoryTubbie.Jon {
