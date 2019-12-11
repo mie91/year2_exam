@@ -1,7 +1,6 @@
 /* =================================
   General
 ==================================== */
-
 .bodyVictory {}
 
 #sky {
@@ -17,6 +16,9 @@
 }
 
 .wrapper {
+  padding: 0 20px;
+  margin: 5px;
+
   h1 {
     text-align: center;
     font-family: $headerFont;
@@ -24,6 +26,7 @@
     color: #fff;
     @include gradient-text;
     margin: 0;
+    padding: 10px;
   }
 }
 
@@ -33,7 +36,8 @@
   margin: 0;
 
   h2 {
-    margin: 0;
+    padding: 0 20px;
+    margin: 5px;
     font-size: 2em;
     letter-spacing: 10px;
     @include gradient-text;
@@ -42,7 +46,6 @@
 /* =================================
   Victory Tubbie Tokens
 ==================================== */
-
 .victoryTubbie {
   width: 250px;
   height: 300px;
@@ -113,5 +116,36 @@
 ==================================== */
 @media only screen and (max-width: 900px) {}
 @media only screen and (max-width: 769px) {}
-@media only screen and (max-width: 425px) {}
-@media only screen and (max-width: 375px) {}
+@media only screen and (max-width: 425px) {
+  .wrapper {
+    h1 {
+      font-size: 2.2em;
+    }
+  }
+
+  .victoryName {
+    h2 {
+      font-size: 2.2em;
+      letter-spacing: 5px;
+    }
+  }
+  @media only screen and (max-width: 375px) {
+    .wrapper {
+      h1 {
+        font-size: 1.5em;
+      }
+    }
+
+    .victoryName {
+      h2 {
+        font-size: 1.5em;
+        letter-spacing: 5px;
+      }
+
+      .victoryTubbie {
+        width: 150px;
+        height: 200px;
+      }
+    }
+  }
+}

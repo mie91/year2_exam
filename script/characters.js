@@ -1,5 +1,6 @@
  /*jshint esversion: 8 */
 
+//Get the characters from the API
 async function fetchCharacters(id) {
     const url = "https://anapioficeandfire.com/api/characters/" + id;
     const response = await fetch(url);
@@ -17,6 +18,8 @@ let charViserys;
 let charOberyn;
 let charEllaria;
 
+
+//Create the character info (names) from the API
 fetchCharacters(583).then(function(data) {
     charJon = data;
     document.getElementById("jonSnow").innerHTML +=

@@ -2,22 +2,22 @@
 
  //Get Canvas
  window.onload = function() {
-   var canvas = document.getElementById("sky");
-   var ctx = canvas.getContext("2d");
+   const canvas = document.getElementById("sky");
+   const ctx = canvas.getContext("2d");
    //Set canvas dimentions
-   var W = window.innerWidth;
-   var H = window.innerHeight;
+   const W = window.innerWidth;
+   const H = window.innerHeight;
 
    canvas.width = W;
    canvas.height = H;
 
 
    //Make snow!
-   var mf = 150; //max flakes
-   var flakes = [];
+   const mf = 150; //max flakes
+   const flakes = [];
 
    //loop through the empty flakes and apply attributes
-   for (var i = 0; i < mf; i++) {
+   for (let i = 0; i < mf; i++) {
      flakes.push({
        x: Math.random() * W,
        y: Math.random() * H,
@@ -29,16 +29,16 @@
    //draw flakes to the canvas
    function drawFlakes() {
      ctx.clearRect(0, 0, W, H);
-     var canvasGradient = ctx.createLinearGradient(45, 0, 0, 140);
+     const canvasGradient = ctx.createLinearGradient(45, 0, 0, 140);
      canvasGradient.addColorStop(0.1, "#702849");
      canvasGradient.addColorStop(0.5, "#ffffff");
      canvasGradient.addColorStop(1, "#1a5b6a");
      ctx.fillStyle = canvasGradient;
      ctx.beginPath();
 
-     for (var i = 0; i < mf; i++) {
+     for (let i = 0; i < mf; i++) {
 
-       var f = flakes[i];
+       let f = flakes[i];
        ctx.moveTo(f.x, f.y);
        ctx.arc(f.x, f.y, f.r, 0, Math.PI * 2, true);
      }
@@ -48,14 +48,14 @@
    }
 
    //Flake animation
-   var angle = 0;
+   let angle = 0;
 
    function moveFlakes() {
      angle += 0.01;
-     for (var i = 0; i < mf; i++) {
+     for (let i = 0; i < mf; i++) {
 
        //Store current flake
-       var f = flakes[i];
+       let f = flakes[i];
 
        //Update X and Y coordinates of every flake
        f.y += Math.pow(f.d, 1) + 3;

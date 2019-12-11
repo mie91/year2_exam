@@ -1,39 +1,49 @@
  /*jshint esversion: 8 */
-let player = null;
-let startGame = document.getElementById("startGame");
-let allPlayers = document.querySelectorAll(".charBox");
 
-allPlayers.forEach(function(characterBox) {
-  characterBox.addEventListener("click", function() {
+ //Declare variables
+ let player = null;
+ const startGame = document.getElementById("startGame");
+ const allPlayers = document.querySelectorAll(".charBox");
 
-    let characterName = this.dataset.name;
-    let selectedPlayerDisplay = document.getElementById("selectedPlayer");
 
-    if (this.classList.contains("theChosen")) {
-      this.classList.remove("theChosen");
-      player = null;
-    } else {
-      allPlayers.forEach(function(characterBox) {
-        characterBox.classList.remove("theChosen");
-      });
-      this.classList.add("theChosen");
-      player = characterName;
-    }
+ //Create the character selction that happens when you click the charBox
+ allPlayers.forEach(function(characterBox) {
+   characterBox.addEventListener("click", function() {
 
-    if (player === null) {
-      selectedPlayerDisplay.innerHTML = "None selected";
-      localStorage.removeItem("player");
-      startGame.disabled = true;
-    } else {
-      selectedPlayerDisplay.innerHTML = characterName;
-      localStorage.setItem("player", characterName);
-      startGame.disabled = false;
-    }
-    console.log(player);
-  });
+     let characterName = this.dataset.name;
+     let selectedPlayerDisplay = document.getElementById("selectedPlayer");
 
-});
+     // When clicking an other character, the selected becomes unselected
+     if (this.classList.contains("theChosen")) {
+       this.classList.remove("theChosen");
+       player = null;
+     } else {
+       allPlayers.forEach(function(characterBox) {
+         characterBox.classList.remove("theChosen");
+       });
+       // The character is selected when clicked, and the theChosen class is created
+       this.classList.add("theChosen");
+       player = characterName;
+     }
 
-startGame.addEventListener("click", function() {
-  window.location.href = "thegame.html";
-});
+
+     /* When no character is selected the startbutton is disabled, and "none selected is displayed" */
+     if (player === null) {
+       selectedPlayerDisplay.innerHTML = "None selected";
+       localStorage.removeItem("player");
+       startGame.disabled = true;
+
+       //When a character is selected, the name is displayed, and the start button is activated
+     } else {
+       selectedPlayerDisplay.innerHTML = characterName;
+       localStorage.setItem("player", characterName);
+       startGame.disabled = false;
+     }
+     console.log(player);
+   });
+
+ });
+ // when the start game button is pressed, the game page is loaded
+ startGame.addEventListener("click", function() {
+   window.location.href = "thegame.html";
+ });

@@ -1,72 +1,85 @@
-
- /*jshint esversion: 8 */
-
+/*jshint esversion: 8 */
+//Declare variables
 let p1Score = 0;
-let p1ScoreDisplay = document.getElementById("p1ScoreDisplay");
-let player = localStorage.getItem("player");
-let playerDisplay = document.getElementById("player");
-playerDisplay.innerHTML= player;
+const p1ScoreDisplay = document.getElementById("p1ScoreDisplay");
+const player = localStorage.getItem("player");
+const playerDisplay = document.getElementById("player");
+playerDisplay.innerHTML = player;
 
-let playerToken = document.getElementById("playerToken");
+//Get the correct token for the board
+const playerToken = document.getElementById("playerToken");
 playerToken.classList.add(player);
 
-let playerTubbie = document.getElementById("playerTubbie");
+//Get the correct tubbie/token for the left display
+const playerTubbie = document.getElementById("playerTubbie");
 playerTubbie.classList.add(player);
 
+//Show the players score
 p1ScoreDisplay.innerHTML = p1Score;
 
-let theDice = document.getElementById("theDice");
+//Add click event to dice
+const theDice = document.getElementById("theDice");
 theDice.addEventListener("click", function() {
-  let theDice = this;
+  const theDice = this;
+
+  //Add the roll class(used for animation )
+  //The empty "" for removal of the "Roll dice" text
   theDice.innerHTML = "";
   theDice.classList.add("rolls");
 
+  //Get a random n 1 to 6
   setTimeout(function() {
-    let rollDice = Math.floor(Math.random() * 6) + 1;
+    const rollDice = Math.floor(Math.random() * 6) + 1;
     updateScore(rollDice);
     tokenProgress();
 
-    let diceClass = "theDice" + rollDice;
+    const diceClass = "theDice" + rollDice;
     theDice.classList = "";
     theDice.classList.add(diceClass);
     theDice.classList.remove("rolls");
-
+    //This is the X amount of m.sec before the code is run
   }, 500);
 });
 
-function updateScore (newRoll) {
+//Add the new score after the dice roll to the current score
+function updateScore(newRoll) {
   p1Score = p1Score + newRoll;
   updateScoreDisplay(p1Score);
 }
 
+// Displaying the new score
 function updateScoreDisplay(updateScore) {
   p1ScoreDisplay.innerHTML = updateScore;
 }
 
-function tokenProgress () {
-  let tiles = document.querySelectorAll(".tile");
-  let allTiles = tiles.length;
-  console.log("allTiles", allTiles);
+function tokenProgress() {
+  const tiles = document.querySelectorAll(".tile");
+  const allTiles = tiles.length;
 
+
+  // If Token moves past GOAL, it has to go back
   if (p1Score > allTiles - 1) {
-    let scorePastTotal = p1Score - (allTiles - 1);
-    let recalculateScore = allTiles - scorePastTotal;
+    const scorePastTotal = p1Score - (allTiles - 1);
+    const recalculateScore = allTiles - scorePastTotal;
     p1Score = recalculateScore;
     updateScoreDisplay(p1Score);
   }
-
+  // Checks if the token is inside tile
   tiles.forEach(function(tile, indexOfTile) {
-    let insideTile = tile.childNodes;
+    const insideTile = tile.childNodes;
     insideTile.forEach(function(element) {
+      // If it is, it will be removed
       if (element.id === "playerToken") {
         element.remove();
       }
     });
+    //Checks if the score matches tile, if it does, the Token is appended
     if (indexOfTile === p1Score) {
-      let token1 = document.createElement("div");
+      const token1 = document.createElement("div");
       token1.classList.add("playerToken", player);
-      token1.id ="playerToken";
+      token1.id = "playerToken";
 
+      //If token reaches GOAL it goes to the victory screen
       tile.appendChild(token1);
       if (p1Score === allTiles - 1) {
         window.location.href = "./victory.html";

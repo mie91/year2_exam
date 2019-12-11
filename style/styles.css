@@ -663,7 +663,7 @@ The board
   max-width: 900px;
   flex-wrap: wrap;
   margin: auto;
-  padding: 20px;
+  padding: 10px;
   border-radius: 60px;
   box-shadow: 0 5px 12px 2px rgba(0, 0, 0, 0.75);
   border: solid #ffffff 2px;
@@ -828,6 +828,10 @@ Media Queries
   flex-direction: column;
 }
 
+.wrapper {
+  padding: 0px 20px;
+  margin: 5px;
+}
 .wrapper h1 {
   text-align: center;
   font-family: "Rock Salt", cursive;
@@ -842,7 +846,8 @@ Media Queries
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 3s linear infinite;
-  margin: 0;
+  margin: 0px;
+  padding: 10px;
 }
 
 .victoryName {
@@ -851,7 +856,8 @@ Media Queries
   margin: 0;
 }
 .victoryName h2 {
-  margin: 0;
+  padding: 0px 20px;
+  margin: 5px;
   font-size: 2em;
   letter-spacing: 10px;
   background: linear-gradient(90deg, white 0%, #702849 30%, #1a5b6a 50%, white 100%);
@@ -937,6 +943,30 @@ Media Queries
 /* =================================
   Media Queries
 ==================================== */
+@media only screen and (max-width: 425px) {
+  .wrapper h1 {
+    font-size: 2.2em;
+  }
+
+  .victoryName h2 {
+    font-size: 2.2em;
+    letter-spacing: 5px;
+  }
+}
+@media only screen and (max-width: 425px) and (max-width: 375px) {
+  .wrapper h1 {
+    font-size: 1.5em;
+  }
+
+  .victoryName h2 {
+    font-size: 1.5em;
+    letter-spacing: 5px;
+  }
+  .victoryName .victoryTubbie {
+    width: 150px;
+    height: 200px;
+  }
+}
 /* =================================
 Navigation Bar
 ==================================== */
@@ -1119,7 +1149,7 @@ footer {
   text-align: center;
   padding: 0 0 20px;
   width: 100%;
-  padding-top: 50px;
+  padding-top: auto;
 }
 
 .creator {
@@ -1128,7 +1158,7 @@ footer {
 }
 
 .creator:hover {
-  color: #702849;
+  color: #ffdaec;
 }
 
 /*# sourceMappingURL=styles.css.map */
