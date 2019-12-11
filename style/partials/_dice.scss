@@ -82,7 +82,27 @@
 /* =================================
   Media Queries
 ==================================== */
-@media only screen and (max-width: 900px) {}
+@media only screen and (max-width: 1024px) {
+  #theDice {
+    width: 80px;
+    height: 80px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  #theDice h4 {
+    font-size: 1.5em;
+  }
+}
 @media only screen and (max-width: 769px) {}
-@media only screen and (max-width: 425px) {}
+@media only screen and (max-width: 425px) {
+  #theDice {
+    width: 60px;
+    height: 60px;
+  }
+
+  #theDice h4 {
+    font-size: 1.2em;
+  }
+}
 @media only screen and (max-width: 375px) {}

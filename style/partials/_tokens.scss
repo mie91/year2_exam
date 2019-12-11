@@ -137,7 +137,40 @@ Token - LEFT SIDE
 /* =================================
   Media Queries
 ==================================== */
-@media only screen and (max-width: 900px) {}
-@media only screen and (max-width: 769px) {}
-@media only screen and (max-width: 425px) {}
-@media only screen and (max-width: 375px) {}
+@media only screen and (max-width: 1025px) {
+  .playerTubbie {
+    width: 120px;
+    height: 200px;
+    margin: 20px auto 0;
+  }
+
+  .playerToken {
+    width: 80px;
+    height: 80px;
+    margin-left: 50%;
+  }
+}
+@media only screen and (max-width: 769px) {
+
+}
+@media only screen and (max-width: 425px) {
+  .playerTubbie {
+    width: 120px;
+    height: 200px;
+    margin: 20px;
+    margin-right: 100px;
+  }
+
+  .playerToken {
+    width: 60px;
+    height: 60px;
+    margin-left: 50%;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .playerTubbie {
+    width: 120px;
+    height: 200px;
+    margin: auto;
+  }
+}

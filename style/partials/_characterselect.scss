@@ -77,7 +77,7 @@ Other
 .selection-container {
   text-align: center;
   font-family: $headerFont;
-  letter-spacing: 3px;
+  letter-spacing: 10px;
   color: $brightteal;
   font-size: 1.6em;
   margin-bottom: 5px;
@@ -85,32 +85,7 @@ Other
   text-shadow: 0 5px 15px $teal;
 }
 
-.startGame {
-  @include basebutton;
-  @include white-teal-btn;
-  font-size: 1.1em;
-  background-color: $darkgreen;
-}
 
-.navlink:hover:before {
-  @include hover-white-before;
-}
-
-.startGame:hover {
-  @include hover-white;
-}
-
-button:disabled {
-  border: 2px solid $white;
-  background-color: #cccccc;
-  color: $darkgray;
-}
-
-button:disabled:hover {
-  box-shadow: none;
-  color: $darkgray;
-  cursor: not-allowed;
-}
 
 .theChosen.charBox {
   box-shadow: 0 5px 50px $black;
@@ -128,5 +103,28 @@ button:disabled:hover {
 
 @media only screen and (max-width: 900px) {}
 @media only screen and (max-width: 769px) {}
-@media only screen and (max-width: 425px) {}
+@media only screen and (max-width: 425px) {
+
+  .characterSelectInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .header {
+    max-width: 170px;
+    h1 {
+      letter-spacing: 2px;
+      font-size: 1.4em;
+      margin: 10px;
+    }
+  }
+  .selection-container {
+    letter-spacing: 2px;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    margin-top: 5px;
+
+  }
+}
 @media only screen and (max-width: 375px) {}

@@ -92,11 +92,113 @@ The board
   background: linear-gradient(130deg, rgba($darkgreen, 1) 0%, rgba($green, 1) 50%, rgba($darkgreen, 1) 100%);
 }
 
-
+//--------------------------------------------------------------------------------------//
 /* =================================
 Media Queries
 ==================================== */
-@media only screen and (max-width: 900px) {}
-@media only screen and (max-width: 769px) {}
-@media only screen and (max-width: 425px) {}
+@media only screen and (max-width: 1199px) {
+  .dice-score-holder {
+    padding: 10px;
+  }
+
+  #player,
+  .character-display {
+    font-size: 1.8em;
+  }
+  /* =================================
+  The board
+  ==================================== */
+.tile-container {
+    max-width: 800px;
+    padding: 10px;
+  }
+}
+
+
+
+//--------------------------------------------------------------------------------------//
+
+@media only screen and (max-width: 1024px) {
+  .dice-score-holder {
+    float: left;
+    margin: 10px 20px 10px 10px;
+    padding: 15px;
+  }
+
+  #player,
+  .character-display {
+    font-size: 1.4em;
+  }
+
+  #player {
+    font-family: $headerFont;
+    font-size: 1.4em;
+  }
+  /* =================================
+  The board
+  ==================================== */
+
+  .tile-container {
+    max-width: 700px;
+    padding: 10px;
+  }
+  .square {
+    height: 90px;
+    width: 90px;
+    margin: 5px;
+  }
+
+  .tile {
+    border-radius: 30px;
+  }
+}
+
+//--------------------------------------------------------------------------------------//
+@media only screen and (max-width: 769px) {
+  .dice-score-holder {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 700px;
+    padding: 5px;
+  }
+
+  .character-display {
+    flex-wrap:wrap;
+  }
+
+  #player {
+    margin-bottom: auto;
+    font-size: 2.5em;
+  }
+}
+
+//--------------------------------------------------------------------------------------//
+@media only screen and (max-width: 426px) {
+  .dice-score-holder {
+    width: 400px;
+    padding: 5px;
+    margin: 20px;
+    flex-wrap: wrap;
+  }
+  .tile-container {
+    max-width: 400px;
+    padding: 10px;
+  }
+  .square {
+    height: 60px;
+    width: 60px;
+    margin: 5px;
+  }
+
+  .tile {
+    border-radius: 20px;
+    font-size: 0.5em;
+  }
+
+  #player {
+    margin-bottom: auto;
+    font-size: 1.5em;
+  }
+}
 @media only screen and (max-width: 375px) {}

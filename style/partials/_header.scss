@@ -25,10 +25,39 @@ nav {
   @include hover-white;
 }
 
+
 .logoimage img {
   max-width: 200px;
   margin-bottom: 5px;
   margin-top: 5px;
+}
+
+/* =================================
+Start game button
+==================================== */
+
+.startGame {
+  @include basebutton;
+  @include white-teal-btn;
+  font-size: 1.1em;
+  background-color: $darkgreen;
+}
+
+
+.startGame:hover {
+  @include hover-white;
+}
+
+button:disabled {
+  border: 2px solid $white;
+  background-color: #cccccc;
+  color: $darkgray;
+}
+
+button:disabled:hover {
+  box-shadow: none;
+  color: $darkgray;
+  cursor: not-allowed;
 }
 
 /* =================================
@@ -51,11 +80,6 @@ nav {
     display: inline-flex;
   }
 
-  .modalBox {
-    text-align: center;
-    margin-left: auto;
-    font-size: 0.7em;
-  }
 
   .header {
     font-size: 0.8em;
@@ -64,7 +88,16 @@ nav {
 }
 @media only screen and (max-width: 425px) {
   .logoimage img {
-    max-width: 100px;
+    max-width: 130px;
+  }
+
+  .navlink {
+    font-size: 1.4em;
+  }
+
+  .startGame {
+
+    font-size: 1.4em;
   }
 }
 @media only screen and (max-width: 375px) {}

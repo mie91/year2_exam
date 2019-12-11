@@ -196,53 +196,12 @@ Other
 .selection-container {
   text-align: center;
   font-family: "Rock Salt", cursive;
-  letter-spacing: 3px;
+  letter-spacing: 10px;
   color: #e5fdff;
   font-size: 1.6em;
   margin-bottom: 5px;
   margin-top: 5px;
   text-shadow: 0 5px 15px #1a5b6a;
-}
-
-.startGame {
-  font-family: "Antic Slab", serif;
-  letter-spacing: 0.2em;
-  margin: 10px;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 50px;
-  text-align: center;
-  transition: all 0.7s ease 0s;
-  cursor: pointer;
-  border: solid 2px white;
-  background-color: #1a5b6a;
-  color: #e5fdff;
-  font-size: 1.1em;
-  background-color: #1F553F;
-}
-
-.navlink:hover:before {
-  transform: scale(1.5);
-  box-shadow: 0 0 15px #ffffff;
-  filter: blur(5px);
-}
-
-.startGame:hover {
-  color: #ffffff;
-  box-shadow: 0 0 30px #ffffff;
-  text-shadow: 0 0 30px #ffffff;
-}
-
-button:disabled {
-  border: 2px solid #ffffff;
-  background-color: #cccccc;
-  color: #2D282F;
-}
-
-button:disabled:hover {
-  box-shadow: none;
-  color: #2D282F;
-  cursor: not-allowed;
 }
 
 .theChosen.charBox {
@@ -258,6 +217,30 @@ button:disabled:hover {
 /* =================================
   Media Queries
 ==================================== */
+@media only screen and (max-width: 425px) {
+  .characterSelectInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .header {
+    max-width: 170px;
+  }
+  .header h1 {
+    letter-spacing: 2px;
+    font-size: 1.4em;
+    margin: 10px;
+  }
+
+  .selection-container {
+    letter-spacing: 2px;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+}
 /* =================================
   MODAL - How to Play
 ==================================== */
@@ -343,6 +326,11 @@ button:disabled:hover {
     text-align: center;
     margin-left: auto;
     font-size: 0.7em;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .modal-content {
+    font-size: 1.3em;
   }
 }
 /* =================================
@@ -486,6 +474,40 @@ Token - LEFT SIDE
 /* =================================
   Media Queries
 ==================================== */
+@media only screen and (max-width: 1025px) {
+  .playerTubbie {
+    width: 120px;
+    height: 200px;
+    margin: 20px auto 0;
+  }
+
+  .playerToken {
+    width: 80px;
+    height: 80px;
+    margin-left: 50%;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .playerTubbie {
+    width: 120px;
+    height: 200px;
+    margin: 20px;
+    margin-right: 100px;
+  }
+
+  .playerToken {
+    width: 60px;
+    height: 60px;
+    margin-left: 50%;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .playerTubbie {
+    width: 120px;
+    height: 200px;
+    margin: auto;
+  }
+}
 /* =================================
   The Dice - General
 ==================================== */
@@ -573,6 +595,28 @@ Token - LEFT SIDE
 /* =================================
   Media Queries
 ==================================== */
+@media only screen and (max-width: 1024px) {
+  #theDice {
+    width: 80px;
+    height: 80px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  #theDice h4 {
+    font-size: 1.5em;
+  }
+}
+@media only screen and (max-width: 425px) {
+  #theDice {
+    width: 60px;
+    height: 60px;
+  }
+
+  #theDice h4 {
+    font-size: 1.2em;
+  }
+}
 /* =================================
 General
 ==================================== */
@@ -669,6 +713,106 @@ The board
 /* =================================
 Media Queries
 ==================================== */
+@media only screen and (max-width: 1199px) {
+  .dice-score-holder {
+    padding: 10px;
+  }
+
+  #player,
+.character-display {
+    font-size: 1.8em;
+  }
+
+  /* =================================
+  The board
+  ==================================== */
+  .tile-container {
+    max-width: 800px;
+    padding: 10px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .dice-score-holder {
+    float: left;
+    margin: 10px 20px 10px 10px;
+    padding: 15px;
+  }
+
+  #player,
+.character-display {
+    font-size: 1.4em;
+  }
+
+  #player {
+    font-family: "Rock Salt", cursive;
+    font-size: 1.4em;
+  }
+
+  /* =================================
+  The board
+  ==================================== */
+  .tile-container {
+    max-width: 700px;
+    padding: 10px;
+  }
+
+  .square {
+    height: 90px;
+    width: 90px;
+    margin: 5px;
+  }
+
+  .tile {
+    border-radius: 30px;
+  }
+}
+@media only screen and (max-width: 769px) {
+  .dice-score-holder {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 700px;
+    padding: 5px;
+  }
+
+  .character-display {
+    flex-wrap: wrap;
+  }
+
+  #player {
+    margin-bottom: auto;
+    font-size: 2.5em;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .dice-score-holder {
+    width: 400px;
+    padding: 5px;
+    margin: 20px;
+    flex-wrap: wrap;
+  }
+
+  .tile-container {
+    max-width: 400px;
+    padding: 10px;
+  }
+
+  .square {
+    height: 60px;
+    width: 60px;
+    margin: 5px;
+  }
+
+  .tile {
+    border-radius: 20px;
+    font-size: 0.5em;
+  }
+
+  #player {
+    margin-bottom: auto;
+    font-size: 1.5em;
+  }
+}
 /* =================================
   General
 ==================================== */
@@ -841,6 +985,44 @@ nav {
 }
 
 /* =================================
+Start game button
+==================================== */
+.startGame {
+  font-family: "Antic Slab", serif;
+  letter-spacing: 0.2em;
+  margin: 10px;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 50px;
+  text-align: center;
+  transition: all 0.7s ease 0s;
+  cursor: pointer;
+  border: solid 2px white;
+  background-color: #1a5b6a;
+  color: #e5fdff;
+  font-size: 1.1em;
+  background-color: #1F553F;
+}
+
+.startGame:hover {
+  color: #ffffff;
+  box-shadow: 0 0 30px #ffffff;
+  text-shadow: 0 0 30px #ffffff;
+}
+
+button:disabled {
+  border: 2px solid #ffffff;
+  background-color: #cccccc;
+  color: #2D282F;
+}
+
+button:disabled:hover {
+  box-shadow: none;
+  color: #2D282F;
+  cursor: not-allowed;
+}
+
+/* =================================
   Media Queries
 ==================================== */
 @media only screen and (max-width: 769px) {
@@ -859,19 +1041,21 @@ nav {
     display: inline-flex;
   }
 
-  .modalBox {
-    text-align: center;
-    margin-left: auto;
-    font-size: 0.7em;
-  }
-
   .header {
     font-size: 0.8em;
   }
 }
 @media only screen and (max-width: 425px) {
   .logoimage img {
-    max-width: 100px;
+    max-width: 130px;
+  }
+
+  .navlink {
+    font-size: 1.4em;
+  }
+
+  .startGame {
+    font-size: 1.4em;
   }
 }
 /* =================================
