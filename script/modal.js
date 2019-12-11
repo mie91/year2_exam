@@ -1,4 +1,9 @@
  /*jshint esversion: 8 */
+
+
+ /* =================================
+   How To play Modal
+ ==================================== */
 const modal = document.getElementById("helpModal");
 const btn = document.getElementById("modalbtn");
 const closeBtn = document.getElementsByClassName("close")[0];
@@ -15,3 +20,10 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 };
+
+
+
+
+/* =================================
+ Trap Modal
+==================================== */

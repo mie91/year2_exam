@@ -121,7 +121,7 @@ Character Selection Avatars
 ==================================== */
 .charBox {
   border-radius: 50px;
-  padding: 50px 50px 20px;
+  padding: 50px 50px 10px;
   margin: 5px;
   background: linear-gradient(0deg, #cf9db1 0%, #702849 100%);
   max-width: 250px;
@@ -151,12 +151,12 @@ Character Selection Avatars
 .charinfo {
   text-align: center;
   border-radius: 20px;
-  margin-top: 50px;
-  background-color: rgba(45, 40, 47, 0.7);
+  margin-top: 35px;
+  background-color: rgba(45, 40, 47, 0.6);
 }
 
 .charinfo p {
-  padding: 7px;
+  padding: 2px;
   font-size: 1.4em;
   font-family: "Antic Slab", serif;
   margin-bottom: 0;
@@ -183,14 +183,14 @@ Other
   align-items: center;
 }
 
-.header {
+.header h1 {
   text-align: center;
   font-family: "Antic Slab", serif;
   letter-spacing: 5px;
   color: #e5fdff;
-  font-size: 1.1em;
+  font-size: 1.6em;
   text-shadow: 0 5px 15px #1a5b6a;
-  margin-right: 50px;
+  margin: 0 50px 0 0;
 }
 
 .selection-container {
@@ -198,8 +198,9 @@ Other
   font-family: "Rock Salt", cursive;
   letter-spacing: 3px;
   color: #e5fdff;
-  font-size: 2em;
+  font-size: 1.6em;
   margin-bottom: 5px;
+  margin-top: 5px;
   text-shadow: 0 5px 15px #1a5b6a;
 }
 
@@ -216,7 +217,7 @@ Other
   border: solid 2px white;
   background-color: #1a5b6a;
   color: #e5fdff;
-  font-size: 1.3em;
+  font-size: 1.1em;
   background-color: #1F553F;
 }
 
@@ -818,7 +819,7 @@ nav {
   border: solid 2px white;
   background-color: #1a5b6a;
   color: #e5fdff;
-  font-size: 1.4em;
+  font-size: 1.1em;
 }
 
 .navlink:hover:before {
@@ -835,7 +836,7 @@ nav {
 
 .logoimage img {
   max-width: 200px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   margin-top: 5px;
 }
 

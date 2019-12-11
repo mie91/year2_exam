@@ -14,7 +14,7 @@ nav {
 .navlink {
   @include basebutton;
   @include white-teal-btn;
-  font-size: 1.4em;
+  font-size: 1.1em;
 }
 
 .navlink:hover:before {
@@ -27,7 +27,7 @@ nav {
 
 .logoimage img {
   max-width: 200px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   margin-top: 5px;
 }
 
