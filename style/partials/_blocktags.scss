@@ -19,3 +19,36 @@
   background-color: $darkgreen;
   color: $white;
 }
+
+.toTheTop{
+  display: none;
+  text-align: center;
+  margin: 40px auto;
+
+  .toTopButton {
+    font-family: $textFont;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: $brightteal;
+    background-color: $darkgreen;
+    padding: 10px;
+    border: solid $white 2px;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+}
+
+
+/* =================================
+Media Queries
+==================================== */
+@media only screen and (max-width: 1199px) {
+
+}
+//--------------------------------------------------------------------------------------//
+
+@media only screen and (max-width: 1024px) {
+  .toTheTop {
+    display: block;
+  }
+}

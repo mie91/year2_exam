@@ -829,7 +829,7 @@ Media Queries
 }
 
 .wrapper {
-  padding: 0px 20px;
+  padding: 0 20px;
   margin: 5px;
 }
 .wrapper h1 {
@@ -846,7 +846,7 @@ Media Queries
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 3s linear infinite;
-  margin: 0px;
+  margin: 0;
   padding: 10px;
 }
 
@@ -856,7 +856,7 @@ Media Queries
   margin: 0;
 }
 .victoryName h2 {
-  padding: 0px 20px;
+  padding: 0 20px;
   margin: 5px;
   font-size: 2em;
   letter-spacing: 10px;
@@ -1110,6 +1110,31 @@ button:disabled:hover {
   color: #ffffff;
 }
 
+.toTheTop {
+  display: none;
+  text-align: center;
+  margin: 40px auto;
+}
+.toTheTop .toTopButton {
+  font-family: "Antic Slab", serif;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #e5fdff;
+  background-color: #1F553F;
+  padding: 10px;
+  border: solid #ffffff 2px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+/* =================================
+Media Queries
+==================================== */
+@media only screen and (max-width: 1024px) {
+  .toTheTop {
+    display: block;
+  }
+}
 /* =================================
 Body, Global
 ==================================== */

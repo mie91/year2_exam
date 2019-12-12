@@ -11,87 +11,88 @@
   <title>Game Of Thrones</title>
 </head>
 
-<body>
-  <div class="content-wrap">
-    <div class="container">
-      <header>
-        <nav>
-          <div class="logoimage">
-            <a href="./index.html"><img class="logo-image" src="./images/logo/logo_tubbies_square1_v7.png" alt="Game Logo"></a>
-          </div>
-          <div class="modalBox">
-            <button class="navlink" id="modalbtn">How to Play</button>
-            <button class="startGame" id="startGame" disabled>Start Game!</button>
-            <div id="helpModal" class="modal">
-              <div class="modal-content">
-                <h1>How to play</h1>
-                <p>First, select your preferred character, then click "Start Game!" If you want to change characters before starting the game, simply select the other, preferred character.</p>
-                <p>When in game, click on the Dice on the left side to roll it, and to advance on the board. <u>But watch out for traps!</u> They can ruin your process on the board, and make you go backwards.
-                  To finish the game, you'll have to reach the "Goal!" tile. You must get the exact number of remaining tiles on your dice to reach the Goal. When the Goal is reached, you have WON the game!</p>
-                <div class="close">
-                  <button class="confirmHelp">Got it!</button>
+  <body>
+    <div class="content-wrap">
+      <div class="container">
+        <header>
+          <nav>
+            <div class="logoimage" id="anchor-top">
+              <a href="./index.html"><img class="logo-image" src="./images/logo/logo_tubbies_square1_v7.png" alt="Game Logo"></a>
+            </div>
+            <div class="modalBox">
+              <button class="navlink" id="modalbtn">How to Play</button>
+              <button class="startGame" id="startGame" disabled>Start Game!</button>
+              <div id="helpModal" class="modal">
+                <div class="modal-content">
+                  <h1>How to play</h1>
+                  <p>First, select your preferred character, then click "Start Game!" If you want to change characters before starting the game, simply select the other, preferred character.</p>
+                  <p>When in game, click on the Dice on the left side to roll it, and to advance on the board. <u>But watch out for traps!</u> They can ruin your process on the board, and make you go backwards.
+                    To finish the game, you'll have to reach the "Goal!" tile. You must get the exact number of remaining tiles on your dice to reach the Goal. When the Goal is reached, you have WON the game!</p>
+                  <div class="close">
+                    <button class="confirmHelp">Got it!</button>
+                  </div>
                 </div>
               </div>
             </div>
+          </nav>
+        </header>
+      </div>
+
+      <main>
+        <div class="container">
+          <div class="characterSelectInfo">
+            <div class="header">
+              <h1>Please select your character:</h1>
+            </div>
+            <div class="selection-container">
+              <div id="selectedPlayer" class="theChosen">None selected</div>
+            </div>
           </div>
-        </nav>
-      </header>
+        </div>
+
+        <div class="container">
+          <div class="charBox" data-name="Jon" data-id="1" id="jonSnow">
+            <img class="tubbie" src="./images/selection_avatars/jon1.png" alt="Cartoon avatar of Jon Snow">
+          </div>
+          <div class="charBox" data-name="Arya" data-id="1" id="arya">
+            <img class="tubbie" src="./images/selection_avatars/arya1.png" alt="Cartoon avatar of Arya Stark">
+          </div>
+          <div class="charBox" data-name="Sansa" data-id="1" id="sansa">
+            <img class="tubbie" src="./images/selection_avatars/sansa1.png" alt="Cartoon avatar of Sansa Stark">
+          </div>
+          <div class="charBox" data-name="Cersei" data-id="1" id="cersei">
+            <img class="tubbie" src="./images/selection_avatars/cersei1.png" alt="Cartoon avatar of Cersei Lannister">
+          </div>
+          <div class="charBox" data-name="Jaime" data-id="1" id="jaime">
+            <img class="tubbie" src="./images/selection_avatars/jaime1.png" alt="Cartoon avatar of Jaime Lannister">
+          </div>
+          <div class="charBox" data-name="Tyrion" data-id="1" id="tyrion">
+            <img class="tubbie" src="./images/selection_avatars/tyrion1.png" alt="Cartoon avatar of Tyrion Lannister">
+          </div>
+          <div class="charBox" data-name="Daenerys" data-id="1" id="dany">
+            <img class="tubbie" src="./images/selection_avatars/dany1.png" alt="Cartoon avatar of Daenarys Targaryen">
+          </div>
+          <div class="charBox" data-name="Viserys" data-id="1" id="viserys">
+            <img class="tubbie" src="./images/selection_avatars/viserys1.png" alt="Cartoon avatar of Viserys Tragaryen">
+          </div>
+          <div class="charBox" data-name="Oberyn" data-id="1" id="oberyn">
+            <img class="tubbie" src="./images/selection_avatars/oberyn1.png" alt="Cartoon avatar of Oberyn Martell ">
+          </div>
+          <div class="charBox" data-name="Ellaria" data-id="1" id="ellaria">
+            <img class="tubbie" src="./images/selection_avatars/ellaria1.png" alt="Cartoon avatar of Ellaria Sand">
+          </div>
+        </div>
+        <div class="toTheTop">
+        <a class=toTopButton href="#anchor-top">Return to top</a>
+        </div>
     </div>
-
-    <main>
-      <div class="characterSelectInfo">
-        <div class="header">
-          <h1>Please select your character:</h1>
-        </div>
-        <div class="selection-container">
-          <div id="selectedPlayer" class="theChosen">None selected</div>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="charBox" data-name="Jon" data-id="1" id="jonSnow">
-          <img class="tubbie" src="./images/selection_avatars/jon1.png" alt="Cartoon avatar of Jon Snow">
-        </div>
-        <div class="charBox" data-name="Arya" data-id="1" id="arya">
-          <img class="tubbie" src="./images/selection_avatars/arya1.png" alt="Cartoon avatar of Arya Stark">
-        </div>
-        <div class="charBox" data-name="Sansa" data-id="1" id="sansa">
-          <img class="tubbie" src="./images/selection_avatars/sansa1.png" alt="Cartoon avatar of Sansa Stark">
-        </div>
-        <div class="charBox" data-name="Cersei" data-id="1" id="cersei">
-          <img class="tubbie" src="./images/selection_avatars/cersei1.png" alt="Cartoon avatar of Cersei Lannister">
-        </div>
-        <div class="charBox" data-name="Jaime" data-id="1" id="jaime">
-          <img class="tubbie" src="./images/selection_avatars/jaime1.png" alt="Cartoon avatar of Jaime Lannister">
-        </div>
-        <div class="charBox" data-name="Tyrion" data-id="1" id="tyrion">
-          <img class="tubbie" src="./images/selection_avatars/tyrion1.png" alt="Cartoon avatar of Tyrion Lannister">
-        </div>
-        <div class="charBox" data-name="Daenerys" data-id="1" id="dany">
-          <img class="tubbie" src="./images/selection_avatars/dany1.png" alt="Cartoon avatar of Daenarys Targaryen">
-        </div>
-        <div class="charBox" data-name="Viserys" data-id="1" id="viserys">
-          <img class="tubbie" src="./images/selection_avatars/viserys1.png" alt="Cartoon avatar of Viserys Tragaryen">
-        </div>
-        <div class="charBox" data-name="Oberyn" data-id="1" id="oberyn">
-          <img class="tubbie" src="./images/selection_avatars/oberyn1.png" alt="Cartoon avatar of Oberyn Martell ">
-        </div>
-        <div class="charBox" data-name="Ellaria" data-id="1" id="ellaria">
-          <img class="tubbie" src="./images/selection_avatars/ellaria1.png" alt="Cartoon avatar of Ellaria Sand">
-        </div>
-      </div>
-
-  </div>
-  </div>
-  </div>
-  </main>
-  <footer>
-
-    <p class="creator">Created by: Marie Helen Berger | 2019</p>
-  </footer>
-  <script src="./script/characters.js"></script>
-  <script src="./script/selection.js"></script>
-  <script src="./script/modal.js"></script>
-</body>
-
+    </div>
+    </main>
+    <footer>
+      <p class="creator">Created by: Marie Helen Berger | 2019</p>
+    </footer>
+    <script src="./script/characters.js"></script>
+    <script src="./script/selection.js"></script>
+    <script src="./script/modal.js"></script>
+  </body>
 </html>
