@@ -406,8 +406,8 @@ Other
 }
 
 .luck-content h1 {
-  background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
-  color: #ffffff;
+  background: #1f553f;
+  color: #e5fdff;
 }
 
 .closeLuckpBtn {
@@ -428,7 +428,6 @@ Other
   border: solid 2px white;
   background-color: #1a5b6a;
   color: #e5fdff;
-  background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
   font-size: 1.2em;
   cursor: pointer;
   margin-top: 5px;
@@ -443,6 +442,11 @@ Other
 /* =================================
   Media Queries
 ==================================== */
+@media only screen and (max-width: 769px) {
+  .trap-content, luck-content {
+    max-width: 80%;
+  }
+}
 /* =================================
 Board Token
 ==================================== */
