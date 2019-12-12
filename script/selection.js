@@ -24,8 +24,16 @@
        // The character is selected when clicked, and the theChosen class is created
        this.classList.add("theChosen");
        player = characterName;
-     }
 
+       //Create scroll effect when the character is selected. 
+       setTimeout(function() {
+         window.scrollTo({
+           top: 0,
+           left: 0,
+           behavior: "smooth"
+         });
+       }, 500);
+     }
 
      /* When no character is selected the startbutton is disabled, and "none selected is displayed" */
      if (player === null) {
