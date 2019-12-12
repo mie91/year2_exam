@@ -52,6 +52,16 @@ function updateScoreDisplay(updateScore) {
   p1ScoreDisplay.innerHTML = updateScore;
 }
 
+function trap() {
+  // open modal like you did for how to play
+
+  // change pIScore
+  p1Score = p1Score - 1;
+  updateScoreDisplay(p1Score);
+  // move the token
+  tokenProgress();
+}
+
 function tokenProgress() {
   const tiles = document.querySelectorAll(".tile");
   const allTiles = tiles.length;
@@ -65,8 +75,10 @@ function tokenProgress() {
     updateScoreDisplay(p1Score);
   }
   // Checks if the token is inside tile
-  tiles.forEach(function(tile, indexOfTile) {
-    const insideTile = tile.childNodes;
+
+  for(var i = 0; i < allTiles; i++) {
+  // tiles.forEach(function(tile, indexOfTile) {
+    const insideTile = tiles[i].childNodes;
     insideTile.forEach(function(element) {
       // If it is, it will be removed
       if (element.id === "playerToken") {
@@ -74,16 +86,24 @@ function tokenProgress() {
       }
     });
     //Checks if the score matches tile, if it does, the Token is appended
-    if (indexOfTile === p1Score) {
+    if (i === p1Score) {
+
+      //check if this is a trap
+      if(p1Score === 4 || p1Score === 11 || p1Score === 16 || p1Score === 21 || p1Score === 26) {
+        trap();
+        break;
+      }
+
       const token1 = document.createElement("div");
       token1.classList.add("playerToken", player);
       token1.id = "playerToken";
 
+
       //If token reaches GOAL it goes to the victory screen
-      tile.appendChild(token1);
+      tiles[i].appendChild(token1);
       if (p1Score === allTiles - 1) {
         window.location.href = "./victory.html";
       }
     }
-  });
+  }
 }
