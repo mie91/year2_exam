@@ -334,6 +334,60 @@ Other
   }
 }
 /* =================================
+  MODAL - Traps
+==================================== */
+.trap-content {
+  width: 50%;
+  text-align: center;
+  color: #e5fdff;
+  font-size: 1.5em;
+}
+
+.trap-content p {
+  padding: 20px;
+}
+
+.trap-content h1 {
+  background: rgba(112, 40, 73, 0.7);
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  margin: 0;
+  border-bottom: solid 2px #ffdaec;
+}
+
+.closeTrapBtn {
+  padding: 10px;
+  text-align: center;
+}
+
+.closeTrapButton {
+  font-family: "Antic Slab", serif;
+  letter-spacing: 0.2em;
+  margin: 10px;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 50px;
+  text-align: center;
+  transition: all 0.7s ease 0s;
+  cursor: pointer;
+  border: solid 2px white;
+  background-color: #702849;
+  color: #ffdaec;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.closeTrapButton:hover {
+  color: #ffffff;
+  box-shadow: 0 0 30px #ffffff;
+  text-shadow: 0 0 30px #ffffff;
+}
+
+/* =================================
+  Media Queries
+==================================== */
+/* =================================
 Board Token
 ==================================== */
 .playerToken {

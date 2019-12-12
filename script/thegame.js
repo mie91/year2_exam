@@ -53,10 +53,10 @@ function updateScoreDisplay(updateScore) {
 }
 
 function trap() {
-  // open modal like you did for how to play
-
+  // open modal
+  theTrapModal.style.display = "block";
   // change pIScore
-  p1Score = p1Score - 1;
+  p1Score = p1Score - 3;
   updateScoreDisplay(p1Score);
   // move the token
   tokenProgress();
@@ -89,7 +89,7 @@ function tokenProgress() {
     if (i === p1Score) {
 
       //check if this is a trap
-      if(p1Score === 4 || p1Score === 11 || p1Score === 16 || p1Score === 21 || p1Score === 26) {
+      if(p1Score === 4 || p1Score === 6 || p1Score === 11 || p1Score === 14 || p1Score === 24) {
         trap();
         break;
       }

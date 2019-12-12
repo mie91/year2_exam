@@ -29,3 +29,17 @@ window.onclick = function(event) {
 /* =================================
  Trap Modal
 ==================================== */
+const theTrapModal = document.getElementById("modalTrap");
+const closeModalTrap = document.getElementsByClassName("closeTrapBtn")[0];
+
+//when clicking on the "got it" button, the modal closes
+closeModalTrap.onclick = function() {
+  theTrapModal.style.display = "none";
+};
+
+// when clicking outside the textbox, the modal closes
+window.onclick = function(event) {
+  if (event.target == theTrapModal) {
+    theTrapModal.style.display = "none";
+  }
+};
