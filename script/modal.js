@@ -43,3 +43,21 @@ window.onclick = function(event) {
     theTrapModal.style.display = "none";
   }
 };
+
+/* =================================
+ Trap Modal
+==================================== */
+const theLuckModal = document.getElementById("modalLuck");
+const closeModalLuck = document.getElementsByClassName("closeLuckpBtn")[0];
+
+//when clicking on the "got it" button, the modal closes
+closeModalLuck.onclick = function() {
+  theLuckModal.style.display = "none";
+};
+
+// when clicking outside the textbox, the modal closes
+window.onclick = function(event) {
+  if (event.target == theLuckModal) {
+    theLuckModal.style.display = "none";
+  }
+};

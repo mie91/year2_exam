@@ -62,6 +62,16 @@ function trap() {
   tokenProgress();
 }
 
+function luck() {
+  // open modal
+  theLuckModal.style.display = "block";
+  // change pIScore
+  p1Score = p1Score + 1;
+  updateScoreDisplay(p1Score);
+  // move the token
+  tokenProgress();
+}
+
 function tokenProgress() {
   const tiles = document.querySelectorAll(".tile");
   const allTiles = tiles.length;
@@ -89,8 +99,14 @@ function tokenProgress() {
     if (i === p1Score) {
 
       //check if this is a trap
-      if(p1Score === 4 || p1Score === 6 || p1Score === 11 || p1Score === 14 || p1Score === 24) {
+      if(p1Score === 4 || p1Score === 6 || p1Score === 11 || p1Score === 15 || p1Score === 20 || p1Score === 25) {
         trap();
+        break;
+      }
+
+      //check if player is lucky
+      if(p1Score === 2 || p1Score === 9 || p1Score === 13 || p1Score === 21) {
+        luck();
         break;
       }
 

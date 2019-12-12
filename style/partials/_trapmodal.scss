@@ -32,6 +32,44 @@
 .closeTrapButton:hover {
   @include hover-white;
 }
+
+
+/* =================================
+  MODAL - Luck Traps
+==================================== */
+.luck-content {
+  width: 50%;
+  text-align: center;
+  color: $brightteal;
+  font-size: 1.5em;
+}
+.luck-content p {
+  padding: 20px;
+}
+.luck-content h1 {
+  background: rgba($darkgreen, 0.7);
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  margin: 0;
+  border-bottom: solid 2px $white;
+}
+
+.closeLuckpBtn {
+  padding: 10px;
+  text-align: center;
+}
+
+.closeLuckButton {
+  @include basebutton;
+  @include white-pink-btn;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-top: 5px;
+}
+.closeLuckButton:hover {
+  @include hover-white;
+}
+
 /* =================================
   Media Queries
 ==================================== */

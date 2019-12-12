@@ -385,6 +385,57 @@ Other
 }
 
 /* =================================
+  MODAL - Luck Traps
+==================================== */
+.luck-content {
+  width: 50%;
+  text-align: center;
+  color: #e5fdff;
+  font-size: 1.5em;
+}
+
+.luck-content p {
+  padding: 20px;
+}
+
+.luck-content h1 {
+  background: rgba(31, 85, 63, 0.7);
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  margin: 0;
+  border-bottom: solid 2px #ffffff;
+}
+
+.closeLuckpBtn {
+  padding: 10px;
+  text-align: center;
+}
+
+.closeLuckButton {
+  font-family: "Antic Slab", serif;
+  letter-spacing: 0.2em;
+  margin: 10px;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 50px;
+  text-align: center;
+  transition: all 0.7s ease 0s;
+  cursor: pointer;
+  border: solid 2px white;
+  background-color: #702849;
+  color: #ffdaec;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.closeLuckButton:hover {
+  color: #ffffff;
+  box-shadow: 0 0 30px #ffffff;
+  text-shadow: 0 0 30px #ffffff;
+}
+
+/* =================================
   Media Queries
 ==================================== */
 /* =================================
@@ -764,6 +815,14 @@ The board
   background: linear-gradient(130deg, #1f553f 0%, #3ca77b 50%, #1f553f 100%);
 }
 
+.tile.trap {
+  background-color: red;
+}
+
+.tile.luck {
+  background-color: blue;
+}
+
 /* =================================
 Media Queries
 ==================================== */
@@ -785,10 +844,6 @@ Media Queries
     padding: 10px;
   }
 }
-.tile.trap {
-  background-color: red;
-}
-
 @media only screen and (max-width: 1024px) {
   .dice-score-holder {
     float: left;
