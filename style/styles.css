@@ -384,13 +384,17 @@ Other
   text-shadow: 0 0 30px #ffffff;
 }
 
+.trap-image {
+  max-width: 100%;
+}
+
 /* =================================
   MODAL - Luck Traps
 ==================================== */
 .luck-content {
   width: 50%;
   text-align: center;
-  color: #e5fdff;
+  color: #ffffff;
   font-size: 1.5em;
 }
 
@@ -399,11 +403,8 @@ Other
 }
 
 .luck-content h1 {
-  background: rgba(31, 85, 63, 0.7);
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-  margin: 0;
-  border-bottom: solid 2px #ffffff;
+  background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+  color: #ffffff;
 }
 
 .closeLuckpBtn {
@@ -422,8 +423,9 @@ Other
   transition: all 0.7s ease 0s;
   cursor: pointer;
   border: solid 2px white;
-  background-color: #702849;
-  color: #ffdaec;
+  background-color: #1a5b6a;
+  color: #e5fdff;
+  background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
   font-size: 1.2em;
   cursor: pointer;
   margin-top: 5px;
@@ -813,14 +815,6 @@ The board
 .tile.finish {
   border: 2px solid #3ca77b;
   background: linear-gradient(130deg, #1f553f 0%, #3ca77b 50%, #1f553f 100%);
-}
-
-.tile.trap {
-  background-color: red;
-}
-
-.tile.luck {
-  background-color: blue;
 }
 
 /* =================================

@@ -1,5 +1,10 @@
 /*jshint esversion: 8 */
 //Declare variables
+
+
+
+
+
 let p1Score = 0;
 const p1ScoreDisplay = document.getElementById("p1ScoreDisplay");
 const player = localStorage.getItem("player");
