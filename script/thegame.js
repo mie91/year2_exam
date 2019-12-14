@@ -1,10 +1,6 @@
 /*jshint esversion: 8 */
+
 //Declare variables
-
-
-
-
-
 let p1Score = 0;
 const p1ScoreDisplay = document.getElementById("p1ScoreDisplay");
 const player = localStorage.getItem("player");
@@ -91,8 +87,8 @@ function tokenProgress() {
   }
   // Checks if the token is inside tile
 
-  for(var i = 0; i < allTiles; i++) {
-  // tiles.forEach(function(tile, indexOfTile) {
+  for (var i = 0; i < allTiles; i++) {
+    // tiles.forEach(function(tile, indexOfTile) {
     const insideTile = tiles[i].childNodes;
     insideTile.forEach(function(element) {
       // If it is, it will be removed
@@ -104,13 +100,13 @@ function tokenProgress() {
     if (i === p1Score) {
 
       //check if this is a trap
-      if(p1Score === 4 || p1Score === 6 || p1Score === 11 || p1Score === 15 || p1Score === 20 || p1Score === 25) {
+      if (p1Score === 4 || p1Score === 6 || p1Score === 11 || p1Score === 15 || p1Score === 20 || p1Score === 25) {
         trap();
         break;
       }
 
       //check if player is lucky
-      if(p1Score === 2 || p1Score === 9 || p1Score === 13 || p1Score === 21) {
+      if (p1Score === 2 || p1Score === 9 || p1Score === 13 || p1Score === 21) {
         luck();
         break;
       }
