@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Game Title - Character Selection">
+  <meta name="keywords" content="The board game, startpage, Game of Thrones, Game, Boardgame, Cartoon, GOT, Fantasy">
+  <meta name="author" content="Marie Helen Berger">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/styles.css">
+  <title>Game Of Tubbies - The Game</title>
+</head>
+
+<body>
+  <div class="content-wrap">
+    <div class="container">
+      <header>
+        <nav>
+
+          <div class="logoimage">
+            <a href="./index.html"><img class="logo-image" src="./images/logo/logo_tubbies_square1_v7.png" alt="Game Logo"></a>
+          </div>
+          <div class="modalBox">
+            <a class="navlink smallbtn pinkbtn" href="./index.html">Back to Character Selection</a>
+            <button class="navlink smallbtn" id="modalbtn">How to Play</button>
+            <div id="helpModal" class="modal">
+              <div class="modal-content">
+                <h1>How to play</h1>
+                <p>Click on the Dice on the left side to roll it, and to advance on the board. <u>But watch out for traps!</u> They can ruin your process on the board, and make you go backwards.
+                  To finish the game, you'll have to reach the "Goal!" tile. You must get the exact number of remaining tiles on your dice to reach the Goal. When the Goal is reached, you have WON the game!</p>
+                <div class="close">
+                  <button class="confirmHelp">Got it!</button>
+                </div>
+              </div>
+            </div>
+            <div id="modalTrap" class="modal">
+              <div class="modal-content trap-content">
+                <h1>OH NOES</h1>
+                <p>Your character was exposed to bad writing. Move back <u>3 spaces</u>. </p>
+                <div class="closeTrapBtn">
+                  <button class="closeTrapButton">Fine!</button>
+                </div>
+              </div>
+            </div>
+            <div id="modalLuck" class="modal">
+              <div class="modal-content luck-content">
+                <h1>Luck!</h1>
+                <p>One of your enemies had a terrible "accident". You are <u>one</u> step closer to VICTORY!</p>
+                <div class="closeLuckpBtn">
+                  <button class="closeLuckButton">Yay!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </nav>
+      </header>
+    </div>
+    <main>
+      <div class="container">
+        <div class="dice-score-holder">
+
+          <div id="player" class="player-display"></div>
+          <div id="playerTubbie" class="playerTubbie"></div>
+          <div id="theDice" class="theDice">
+            <h4 class="diceText">Roll Dice!</h4>
+          </div>
+          <div class="character-display">
+            Your Score:
+            <span id="p1ScoreDisplay" class="p1ScoreDisplay"></span>
+          </div>
+        </div>
+
+
+        <div class="board">
+          <div class="tile-container">
+
+            <div class="tile square start"> Start
+              <div id="playerToken" class="playerToken"></div>
+            </div>
+            <div class="tile square">1</div>
+            <div class="tile square luck"><img class="trap-image" src="./images/misc/clover1small.png" alt="Golden colored clover"></div>
+            <div class="tile square">3</div>
+            <div class="tile square trap"><img class="trap-image" src="./images/misc/skull1small.png" alt="Danger Icon"></div>
+            <div class="tile square">5</div>
+            <div class="tile square trap"><img class="trap-image" src="./images/misc/skull1small.png" alt="Danger Icon"></div>
+            <div class="tile square">7</div>
+            <div class="tile square">8</div>
+            <div class="tile square luck"><img class="trap-image" src="./images/misc/clover1small.png" alt="Golden colored clover"></div>
+            <div class="tile square">10</div>
+            <div class="tile square trap"><img class="trap-image" src="./images/misc/skull1small.png" alt="Danger Icon"></div>
+            <div class="tile square">12</div>
+            <div class="tile square luck"><img class="trap-image" src="./images/misc/clover1small.png" alt="Golden colored clovero"></div>
+            <div class="tile square">14</div>
+            <div class="tile square trap"><img class="trap-image" src="./images/misc/skull1small.png" alt="Danger Icon"></div>
+            <div class="tile square">16</div>
+            <div class="tile square">17</div>
+            <div class="tile square">18</div>
+            <div class="tile square ">19</div>
+            <div class="tile square trap"><img class="trap-image" src="./images/misc/skull1small.png" alt="Danger Icon"></div>
+            <div class="tile square luck"><img class="trap-image" src="./images/misc/clover1small.png" alt="Golden colored clover"></div>
+            <div class="tile square">22</div>
+            <div class="tile square">23</div>
+            <div class="tile square">24</div>
+            <div class="tile square trap"><img class="trap-image" src="./images/misc/skull1small.png" alt="Danger Icon"></div>
+            <div class="tile square">26</div>
+            <div class="tile square">27</div>
+            <div class="tile square">28</div>
+            <div class="tile square finish">Finish</div>
+
+          </div>
+        </div>
+      </div>
+  </div>
+  </main>
+  <footer>
+    <p class="creator">Created by: Marie Helen Berger | 2019</p>
+  </footer>
+  <script src="./script/modal.js"></script>
+  <script src="./script/thegame.js"></script>
+</body>
+
+</html>
